@@ -315,7 +315,7 @@ button {
     line-height: 40px;
     text-align: start;
     width: 75%;
-    /* margin: 40px 0px 25px 32px; */
+    margin: 40px 0px 25px 32px;
     height: 30%;
 }
 
@@ -328,15 +328,15 @@ button {
     margin-right: 80px;
     margin-bottom: 24px; */
     width: 75%;
-    height: 50%;
+    height: 30%;
     padding-top: 30px;
 }
 
 .btn-wrapper-card {
     text-align: start;
-    /* margin: 0px 0px 40px 32px; */
+    margin: 0px 0px 40px 32px;
     /* position: absolute; */
-    height: 20%;
+    height: 30%;
 }
 
 .btn-card1 {
