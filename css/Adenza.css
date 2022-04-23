@@ -291,52 +291,103 @@ button {
     border-radius: 20px;
     box-shadow: -60px 0px 80px rgb(0 0 0 / 5%);
     width: 48%;
-    position: relative;
+    /*position: relative;*/
+    height: 100%;
 }
 
 .content-wrapper-conversion {
     display: flex;
-    min-height: 310px;
+    /*min-height: 310px;*/
+    padding-bottom: 40px;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    .content-wrapper-conversion {
+        flex-direction: column;
+    }
 }
 
 .icon-block-conversion img {
     margin: 40px 0px 0px 40px;
 }
 
+@media (max-width: 800px) {
+    .icon-block-conversion {
+        text-align: left;
+    }
+}
+
+
 .txt-block-conversion {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: flex-end;*/
+    /*padding: 40px 10px 35px 30px;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /* justify-content: flex-end; */
+    padding: 40px 10px 0 30px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 40px 10px 35px 30px;
+    min-height: 340px;
 }
 
 .title-conversion-card {
+    /*font-size: 32px;*/
+    /*line-height: 40px;*/
+    /*text-align: start;*/
+    /*width: 75%;*/
+    /* margin: 40px 0px 25px 32px; */
+    /*height: 30%;*/
+
+    flex-grow: 1;
     font-size: 32px;
     line-height: 40px;
     text-align: start;
     width: 75%;
     /* margin: 40px 0px 25px 32px; */
-    height: 30%;
+    /*height: 30%;*/
 }
 
 .txt-conversion-card {
+    /*font-size: 16px;*/
+    /*line-height: 24px;*/
+    /* margin: 24px 0px; */
+    /*text-align: start;*/
+    /* margin-left: 32px;
+    margin-right: 80px;
+    margin-bottom: 24px; */
+    /*width: 75%;*/
+    /*height: 50%;*/
+    /*padding-top: 30px;*/
+
+    flex-grow: 3;
     font-size: 16px;
     line-height: 24px;
     /* margin: 24px 0px; */
     text-align: start;
-    /* margin-left: 32px;
-    margin-right: 80px;
-    margin-bottom: 24px; */
     width: 75%;
-    height: 50%;
+    /*height: 50%;*/
     padding-top: 30px;
 }
 
+@media (max-width: 800px) {
+    .txt-conversion-card {
+        width: 100%;
+    }
+}
+
 .btn-wrapper-card {
-    text-align: start;
+    /*text-align: start;*/
     /* margin: 0px 0px 40px 32px; */
     /* position: absolute; */
-    height: 20%;
+    /*height: 20%;*/
+
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .btn-card1 {
@@ -397,7 +448,7 @@ button {
     background: #F6EDFF;
     border-radius: 20px;
     max-width: 304px;
-    height: 368px;
+    min-height: 368px;
     margin-bottom: 40px;
     width: 24%;
 }
@@ -405,8 +456,8 @@ button {
 .container-monetization-content {
     margin-left: 40px;
     margin-top: 40px;
-    width: 243px;
-    height: 104px;
+    /*width: 243px;*/
+    /*height: 104px;*/
 }
 
 .title-card-monetization {
@@ -414,6 +465,12 @@ button {
     font-size: 24px;
     line-height: 32px;
     margin: 24px 0px;
+}
+
+@media (max-width: 1029px) {
+    .title-card-monetization {
+        min-height: 100px;
+    }
 }
 
 .txt-card-monetization {
