@@ -89,6 +89,12 @@ button {
     justify-content: center;
 }
 
+@media (max-width: 1400px) {
+  .first-section {
+    width: 90%;
+  }
+}
+
 .border-nav {
     width: 100%;
     border-bottom: 1px solid #EADDFF;
@@ -160,6 +166,12 @@ button {
     justify-content: center;
 }
 
+@media (max-width: 1400px) {
+  .first-nav-content-wrapper {
+    width: 90%;
+  }
+}
+
 .left-first-txt {
     display: flex;
     flex-direction: column;
@@ -224,12 +236,12 @@ button {
 .us-trusted-txt {
     font-size: 28px;
     line-height: 36px;
-    width: 731px;
+    max-width: 731px;
     height: 56px;
     margin: 30px 0px 60px 0px;
     color: #6750A4;
     text-align: center;
-    max-width: 1318px;
+    width: 90%;
 }
 
 .conversion-block-wrapper {
@@ -250,10 +262,11 @@ button {
     line-height: 52px;
     color: #1D192B;
     /* width: 829px; */
+    width: 90%;
 }
 
 .cards-conversion-wrapper {
-    width: 100%;
+    width: 90%;
     display: flex;
     margin-bottom: 104px;
     max-width: 1100px;
@@ -266,7 +279,7 @@ button {
     background: #FFFFFF;
     border-radius: 20px;
     /* margin-right: 32px; */
-    width: 40%;
+    /* width: 40%; */
     box-sizing: border-box;
     width: 48%;
 }
@@ -278,14 +291,23 @@ button {
     border-radius: 20px;
     box-shadow: -60px 0px 80px rgb(0 0 0 / 5%);
     width: 48%;
+    position: relative;
 }
 
 .content-wrapper-conversion {
     display: flex;
+    min-height: 310px;
 }
 
 .icon-block-conversion img {
     margin: 40px 0px 0px 40px;
+}
+
+.txt-block-conversion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 10px 35px 30px;
 }
 
 .title-conversion-card {
@@ -294,6 +316,7 @@ button {
     text-align: start;
     width: 75%;
     margin: 40px 0px 25px 32px;
+    height: 30%;
 }
 
 .txt-conversion-card {
@@ -301,16 +324,19 @@ button {
     line-height: 24px;
     /* margin: 24px 0px; */
     text-align: start;
-    margin-left: 32px;
+    /* margin-left: 32px;
     margin-right: 80px;
-    margin-bottom: 24px;
+    margin-bottom: 24px; */
     width: 75%;
+    height: 30%;
+    padding-top: 30px;
 }
 
 .btn-wrapper-card {
     text-align: start;
     margin: 0px 0px 40px 32px;
-    position: absolute;
+    /* position: absolute; */
+    height: 30%;
 }
 
 .btn-card1 {
@@ -344,7 +370,7 @@ button {
 
 .monetization-opportunities-container {
     display: flex;
-    width: 100%;
+    width: 90%;
     max-width: 1318px;
     flex-direction: column;
     margin-bottom: 104px;
@@ -453,7 +479,7 @@ button {
     display: flex;
     max-width: 1318px;
     position: relative;
-    width: 100%;
+    width: 90%;
     margin-bottom: 130px;
 }
 
@@ -506,7 +532,7 @@ button {
 
 .love-advertisers-content-wrapper {
     max-width: 1318px;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -592,7 +618,7 @@ button {
     background: rgb(155, 119, 186);
     background: linear-gradient(90deg, rgba(155, 119, 186, 1) 0%, rgba(115, 102, 250, 1) 35%, rgba(188, 167, 195, 1) 100%);
     border-radius: 6px;
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -692,7 +718,7 @@ button {
 
 .questions-block-content-wrapper {
     max-width: 1318px;
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     margin-top: 155px;
@@ -892,9 +918,9 @@ form p {
     margin-bottom: 10px;
 }
 
-.txt-block-conversion {
+/* .txt-block-conversion {
     position: relative;
-}
+} */
 
 .footer-links {
     width: 100%;
