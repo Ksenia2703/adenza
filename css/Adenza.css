@@ -164,6 +164,7 @@ button {
     width: 100%;
     margin-top: 138px;
     justify-content: center;
+    display: none;
 }
 
 @media (max-width: 1400px) {
