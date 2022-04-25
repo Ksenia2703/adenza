@@ -16,7 +16,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
     margin: 0;
     padding: 0;
     border: 0;
@@ -657,7 +657,8 @@ button {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: 280px;
+    margin-bottom: 240px;
+    margin-top: 40px;
 }
 
 .time-to-start-block-wrapper {
@@ -799,10 +800,6 @@ button {
         /*width: 100%;*/
         margin: 100px 50px 0;
     }
-}
-
-.container-left-block-inform {
-    /*margin-top: 100px;*/
 }
 
 @media (max-width: 999px) {
@@ -1088,8 +1085,17 @@ form p {
     border: 1px solid #E7E0EC;
     font-size: 16px;
     line-height: 24px;
-    padding: 13px 0px 11px 22px;
+    padding: 13px 0px 11px 43px;
+    color: black;
 }
+
+::-webkit-input-placeholder {
+   color:    rgb(31, 30, 30);
+}
+
+/* input:focus {
+    border: 3px solid rgb(255, 3, 192); 
+} */
 
 .style-btn-registration {
     align-items: center;
@@ -1099,6 +1105,69 @@ form p {
 
 .close-btn-registration {
     right: -55px;
+}
+
+.slick-dots li button:before {
+    font-size: 16px;
+    color: rgb(115 102 250);
+}
+
+.slick-dots li.slick-active button:before {
+    color: #6f63ff;
+}
+
+.slick-track {
+    height: 100%;
+}
+
+
+.layout-wrapper-card-love-advertisers {
+    margin: 0 15px;
+}
+
+   .radio input { display: none;}
+   .radio span {
+    position: relative;
+    display: inline-block;
+    width: 16px; 
+    height: 16px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #9f9f9f;
+    margin: 0px 12px;
+   }
+   .radio input:checked + span { 
+    background: #ffffff;
+   }
+   .radio input:checked + span::before { 
+    content: '';
+    position: absolute;
+    left: 3px; 
+    top: 3px;
+    background: #6F63FF;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+   }
+
+.icon {
+    padding-left: 25px;
+    background: url(../img/icon.png) no-repeat left;
+    background-size: 20px;
+    background-position: 12px 13px;
+}
+
+.icon-mail {
+    padding-left: 25px;
+    background: url(../img/icon1.png) no-repeat left;
+    background-size: 20px;
+    background-position: 12px 13px;
+}
+
+.icon-pass {
+    padding-left: 25px;
+    background: url(../img/icon2.png) no-repeat left;
+    background-size: 20px;
+    background-position: 12px 13px;
 }
 
 

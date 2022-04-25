@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="css/Adenza.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/Adenza.css">
+    
 </head>
 <body>
 <div class="wrapper-project">
@@ -366,13 +369,13 @@
 
 <!--                                <div class="wrapper-radio">-->
                                     <div class="first-radio-wrapper">
-                                        <input type="radio" name="role" id="role1"><label for="role1">I am an advertiser</label>
+                                        <label for="role1" class="radio"><input type="radio" name="role" id="role1" class="radio"><span></span>I am an advertiser</label>
                                     </div>
                                     <div class="second-radio-wrapper">
-                                        <input type="radio" name="role" id="role3"><label for="role3">I am a publisher</label>
+                                        <label for="role3" class="radio"><input type="radio" name="role" id="role3"><span></span>I am a publisher</label>
                                     </div>
                                     <div class="third-radio-wrapper">
-                                        <input type="radio" name="role" id="role2"><label for="role2">Audience development</label>
+                                        <label for="role2" class="radio"><input type="radio" name="role" id="role2"><span></span>Audience development</label>
                                     </div>
                                 </div>
 
@@ -421,16 +424,16 @@
                 <button class="btn-advantages btn-color-advantages">FOR ADVERTISERS</button>
             </div>
             <div class="field">
-                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Name" class="icon" style="background-color: white;">
             </div>
             <div class="field">
-                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="E-mail" class="icon-mail" style="background-color: white;">
             </div>
             <div class="field">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" class="icon-pass" style="background-color: white;">
             </div>
             <div class="field">
-                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password" class="icon-pass" style="background-color: white;">
             </div>
             <div class="field">
                 <button class="btn-color style-btn-registration">REGISTRATION</button>
@@ -438,10 +441,7 @@
         </div>
     </div>
 
-</div>
-</body>
-
-<footer>
+    <footer>
     <!--        подвал-->
     <div style="display: flex;flex-direction: column;align-items: center; font-size: 16px;">
         <div class="logo-footer">
@@ -471,6 +471,49 @@
 
     </div>
 </footer>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.love-advertisers-card-wrapper').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+});
+
+</script>
+</body>
 
 <!-- <div class="success-signed-wrapper">
     .success-signed-form
