@@ -11,6 +11,7 @@
 
 </head>
 <body>
+<!-- <div id="popupFade" class="popup-fade d-none-opacity"></div> -->
 <div class="wrapper-project">
     <div class="border-nav">
         <div class="first-section">
@@ -53,7 +54,9 @@
                 <div class="for-performance-txt">
                     Grow revenue with performance-driven advertising platform for marketers and affilates
                 </div>
-                <button class="btn-form btn-color btn-for-performance">LAUNCH CAMPAIGN</button>
+                <div class="btn-wrapper-launch">
+                    <button class="btn-form btn-color btn-for-performance">LAUNCH CAMPAIGN</button>
+                </div>
             </div>
             <div class="right-first-img">
                 <div class="devices-img">
@@ -347,46 +350,54 @@
             </div>
         </div>
     </div>
-    <div class="success-signed-wrapper" style="display: none;">
-        <div class="success-content-wrapper">
-            <img src="img/Vector.png" alt="" class="close-btn">
-            <img src="img/image 11.png" alt="" width="152px" height="161px">
-            <div class="success-title">
-                Great! You’ve successfully signed up for Adenza
-            </div>
-            <div class="success-txt">
-                We’ve sent you lettr to confirm your email address. Please check your inbox
-            </div>
-            <div class="success-btn">
-                <button class="btn-color style-btn-success">OK</button>
+    <div class="wrapper-success-modal" style=" display: none;">
+        <div class="success-signed-wrapper">
+            <div class="success-content-wrapper">
+                <img src="img/Vector.png" alt="" class="vector">
+                <img src="img/image 11.png" alt="" width="152px" height="161px" class="envelope">
+                <div class="success-title">
+                    Great! You’ve successfully signed up for Adenza
+                </div>
+                <div class="success-txt">
+                    We’ve sent you lettr to confirm your email address. Please check your inbox
+                </div>
+                <div class="success-btn">
+                    <button class="btn-color style-btn-success">OK</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="registration-wrapper" style="display: none;">
-        <div class="registration-content-wrapper">
-            <img src="img/Vector.png" alt="" class="close-btn close-btn-registration">
-            <img src="img/Logo.png" alt="" width="140px" height="29px">
-            <div class="success-title">
-                Registration on Adenza
-            </div>
-            <div class="button-advantages-wrapper" style="margin-bottom: 20px;">
-                <button class="btn-advantages">FOR PUBLISHERS</button>
-                <button class="btn-advantages btn-color-advantages">FOR ADVERTISERS</button>
-            </div>
-            <div class="field">
-                <input type="text" placeholder="Name" class="icon" style="background-color: white;">
-            </div>
-            <div class="field">
-                <input type="text" placeholder="E-mail" class="icon-mail" style="background-color: white;">
-            </div>
-            <div class="field">
-                <input type="password" placeholder="Password" class="icon-pass" style="background-color: white;">
-            </div>
-            <div class="field">
-                <input type="password" placeholder="Password" class="icon-pass" style="background-color: white;">
-            </div>
-            <div class="field">
-                <button class="btn-color style-btn-registration">REGISTRATION</button>
+    <div class="wrapper-success-modal" style="display: none;">
+        <div class="registration-wrapper">
+            <div class="registration-content-wrapper">
+                <img src="img/Vector.png" alt="" class="vector-success">
+                <img src="img/Logo.png" alt="" width="140px" height="29px">
+                <div class="success-title">
+                    Registration on Adenza
+                </div>
+                <div class="button-advantages-wrapper" style="margin-bottom: 20px;">
+                    <button class="btn-advantages">FOR PUBLISHERS</button>
+                    <button class="btn-advantages btn-color-advantages">FOR ADVERTISERS</button>
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="Name" class="icon" style="background-color: white;">
+                </div>
+                <div class="field">
+                    <input type="text" placeholder="E-mail" class="icon-mail" style="background-color: white;">
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" class="icon-pass" style="background-color: white;">
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Password" class="icon-pass" style="background-color: white;">
+                </div>
+                <div class="checkbox policy-wrapper">
+                    <input class="custom-checkbox" type="checkbox" id="policy-check" name="policy-check" style="display: none;">
+                    <label for="policy-check" style="margin: 0px 24px;"><span>Agree the <a href="">terms and policy</a></span></label>
+                </div>
+                <div class="field">
+                    <button class="btn-color style-btn-registration">REGISTRATION</button>
+                </div>
             </div>
         </div>
     </div>
