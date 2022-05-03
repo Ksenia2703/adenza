@@ -7,20 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="css/Adenza.css">
+    <link rel="stylesheet" type="text/css" href="css/Adenza.css?v=9">
 
 </head>
-<body>
-<!-- <div id="popupFade" class="popup-fade d-none-opacity"></div> -->
+<body style="overflow-x:hidden; z-index: 9999;">
+<div id="popupFade" class="popup-fade d-none-opacity d-none"></div>
 <div class="wrapper-project">
+
+
     <div class="border-nav">
         <div class="first-section">
             <div class="navigation-wrapper">
-                <div class="menu-mob">
-                    <img src="img/Category.png" alt="">
+                <div class="menu-mob" id="mobilMenu">
+                    <img src="img/Category.svg" alt="" loading="lazy">
                 </div>
                 <div class="left-block-logo">
-                    <img src="img/Logo.svg" alt="">
+                    <img src="img/Logo.svg" alt="" loading="lazy">
                 </div>
                 <div class="center-block-nav">
                     <a class="advertiser"
@@ -35,10 +37,10 @@
                 </div>
                 <div class="right-block-log-in">
                     <button class="btn-form btn-indent">Log in</button>
-                    <button class="btn-form btn-color btn-sign">
+                    <button class="btn-form btn-color btn-sign" id="signUp">
                         <div style="display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;">
-                            <div><img src="img/Profile.png" alt=""></div>
-                            <div style="margin-left:5px;white-space:nowrap;">Sign Up</div>
+                            <div class="profile-img" style="display: flex;"><img src="img/Profile.png" alt="" loading="lazy"></div>
+                            <div class="sign-btn">Sign Up</div>
                         </div>
                     </button>
                 </div>
@@ -55,69 +57,147 @@
                     Grow revenue with performance-driven advertising platform for marketers and affilates
                 </div>
                 <div class="btn-wrapper-launch">
-                    <button class="btn-form btn-color btn-for-performance">LAUNCH CAMPAIGN</button>
+                    <button class="btn-form btn-color btn-for-performance reg-modal-open">LAUNCH CAMPAIGN</button>
                 </div>
             </div>
             <div class="right-first-img">
                 <div class="devices-img">
-                    <img src="img/image 6.svg" alt="">
+                    <img src="img/image6.1.svg" alt="" class="computer-img" loading="lazy">
+                    <img src="img/image_7.svg" alt="" class="hand-img" loading="lazy">
                 </div>
                 <div class="devices2-img">
-                    <img src="img/image6.1.svg" alt="">
+                    <img src="img/image6.1.svg" alt="" loading="lazy">
                 </div>
             </div>
         </div>
     </div>
-    <div class="us-trusted-wrapper">
-        <img src="img/43353.png" alt="" style="width: 100%;">
-        <div class="us-trusted-txt">
-            We are trusted by more than 300 companies, 65% of which have been working with us for more than 6 years
-        </div>
-    </div>
-    <div class="conversion-block-wrapper">
-        <div class="conversion-block-title">
-            Made for conversion-focused campaigns
-        </div>
-        <div class="cards-conversion-wrapper">
-            <div class="left-cards-conversion-wrapper">
-                <div class="content-wrapper-conversion">
-                    <div class="icon-block-conversion">
-                        <img src="img/icon-1.png" alt="">
+
+
+    <div class="bg-wrapper">
+        <div>
+            <div class="bg">
+                <div class="bg-left"></div>
+                <div class="bg-right"></div>
+            </div>
+            <div style="position:absolute;top:0; width: 100%;">
+                <div class="us-trusted-wrapper">
+                    <img src="img/43353.png" alt="" style="width: 100%;" loading="lazy">
+                    <div class="us-trusted-txt">
+                        We are trusted by more than 300 companies, 65% of which have been working with us for more than 6 years
                     </div>
-                    <div class="txt-block-conversion">
-                        <div class="title-conversion-card">
-                            Premium traffic for advertisers
+                </div>
+                <div class="conversion-block-wrapper">
+                    <div class="conversion-block-title">
+                        Made for conversion-focused campaigns
+                    </div>
+                    <div class="cards-conversion-wrapper">
+                        <div class="left-cards-conversion-wrapper">
+                            <div class="content-wrapper-conversion">
+                                <div class="icon-block-conversion">
+                                    <img src="img/Rectangle 13.svg" alt="" loading="lazy">
+                                </div>
+                                <div class="txt-block-conversion">
+                                    <div class="title-conversion-card">
+                                        Premium traffic for advertisers
+                                    </div>
+                                    <div class="txt-conversion-card">
+                                        Get quality leads and customers for your business from our premium publishers network.
+                                    </div>
+                                    <div class="btn-wrapper-card">
+                                        <button class="btn-card1 btn-color reg-modal-open">Advertise</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="txt-conversion-card">
-                            Get quality leads and customers for your business from our premium publishers network.
-                        </div>
-                        <div class="btn-wrapper-card">
-                            <button class="btn-card1 btn-color">Advertise</button>
+                        <div class="right-cards-conversion-wrapper">
+                            <div class="content-wrapper-conversion">
+                                <div class="icon-block-conversion">
+                                    <img src="img/Rectangle 13.1.svg" alt="" loading="lazy">
+                                </div>
+                                <div class="txt-block-conversion">
+                                    <div class="title-conversion-card">
+                                        Monetization for publishers
+                                    </div>
+                                    <div class="txt-conversion-card">
+                                        Generate more revenue from every new visitor with native widgets specially tailored for
+                                        your
+                                        website.
+                                    </div>
+                                    <div class="btn-wrapper-card">
+                                        <button class="btn-card2 btn-color reg-modal-open">Increase revenue</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="right-cards-conversion-wrapper">
-                <div class="content-wrapper-conversion">
-                    <div class="icon-block-conversion">
-                        <img src="img/icon-2.png" alt="">
-                    </div>
-                    <div class="txt-block-conversion">
-                        <div class="title-conversion-card">
-                            Monetization for publishers
-                        </div>
-                        <div class="txt-conversion-card">
-                            Generate more revenue from every new visitor with native widgets specially tailored for your
-                            website.
-                        </div>
-                        <div class="btn-wrapper-card">
-                            <button class="btn-card2 btn-color">Increase revenue</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+
+<!--        <div class="us-trusted-wrapper">-->
+<!--            <img src="img/43353.png" alt="" style="width: 100%;">-->
+<!--            <div class="us-trusted-txt">-->
+<!--                We are trusted by more than 300 companies, 65% of which have been working with us for more than 6 years-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="conversion-block-wrapper">-->
+<!--            <div class="conversion-block-title">-->
+<!--                Made for conversion-focused campaigns-->
+<!--            </div>-->
+<!--            <div class="cards-conversion-wrapper">-->
+<!--                <div class="left-cards-conversion-wrapper">-->
+<!--                    <div class="content-wrapper-conversion">-->
+<!--                        <div class="icon-block-conversion">-->
+<!--                            <img src="img/icon-1.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="txt-block-conversion">-->
+<!--                            <div class="title-conversion-card">-->
+<!--                                Premium traffic for advertisers-->
+<!--                            </div>-->
+<!--                            <div class="txt-conversion-card">-->
+<!--                                Get quality leads and customers for your business from our premium publishers network.-->
+<!--                            </div>-->
+<!--                            <div class="btn-wrapper-card">-->
+<!--                                <button class="btn-card1 btn-color">Advertise</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="right-cards-conversion-wrapper">-->
+<!--                    <div class="content-wrapper-conversion">-->
+<!--                        <div class="icon-block-conversion">-->
+<!--                            <img src="img/icon-2.png" alt="">-->
+<!--                        </div>-->
+<!--                        <div class="txt-block-conversion">-->
+<!--                            <div class="title-conversion-card">-->
+<!--                                Monetization for publishers-->
+<!--                            </div>-->
+<!--                            <div class="txt-conversion-card">-->
+<!--                                Generate more revenue from every new visitor with native widgets specially tailored for-->
+<!--                                your-->
+<!--                                website.-->
+<!--                            </div>-->
+<!--                            <div class="btn-wrapper-card">-->
+<!--                                <button class="btn-card2 btn-color">Increase revenue</button>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="bg">-->
+<!--            <div class="bg-left"></div>-->
+<!--            <div class="bg-right">-->
+<!--                <img src="img/we.png" alt="">-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
+
+
+
+
+
     <div class="monetization-opportunities-wrapper">
         <div class="monetization-opportunities-container">
             <div class="monetization-opportunities-title">
@@ -127,7 +207,7 @@
                 <div class="right-block-card">
                     <div class="layout-wrapper-card-monetization">
                         <div class="container-monetization-content">
-                            <img src="img/icon1.1.png" alt="">
+                            <img src="img/Rectangle 14.svg" alt="" loading="lazy">
                             <div class="title-card-monetization">
                                 Advanced targeting
                             </div>
@@ -139,12 +219,13 @@
                     </div>
                     <div class="layout-wrapper-card-monetization">
                         <div class="container-monetization-content">
-                            <img src="img/icon1.2.png" alt="">
+                            <img src="img/Rectangle 14.1.svg" alt="" loading="lazy">
                             <div class="title-card-monetization">
                                 Traffic from around the world
                             </div>
                             <div class="txt-card-monetization">
-                                Hundreds of thousands of sites and applications around the world are ready to place your ad.
+                                Hundreds of thousands of sites and applications around the world are ready to place your
+                                ad.
                                 Traffic volumes are limited only by your settings and budgets.
                             </div>
                         </div>
@@ -153,7 +234,7 @@
                 <div class="left-block-card">
                     <div class="layout-wrapper-card-monetization">
                         <div class="container-monetization-content">
-                            <img src="img/icon1.3.png" alt="">
+                            <img src="img/Rectangle 14.2.svg" alt="" loading="lazy">
                             <div class="title-card-monetization" style="width: 170px;">
                                 Absolute control
                             </div>
@@ -164,7 +245,7 @@
                     </div>
                     <div class="layout-wrapper-card-monetization">
                         <div class="container-monetization-content">
-                            <img src="img/icon1.4.png" alt="">
+                            <img src="img/Rectangle 14.3.svg" alt="" loading="lazy">
                             <div class="title-card-monetization" style="width: 172px;">
                                 Maximum result
                             </div>
@@ -176,21 +257,25 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-monetization btn-color">GET STARTED</button>
+            <button class="btn-monetization btn-color reg-modal-open">GET STARTED</button>
         </div>
     </div>
+
+
+
+
     <div class="our-advantages-wrapper">
         <div class="title-button-advantages-wrapper">
             <div class="title-advantages">
                 Our advantages
             </div>
             <div class="button-advantages-wrapper">
-                <button class="btn-advantages">FOR PUBLISHERS</button>
-                <button class="btn-advantages btn-color-advantages">FOR ADVERTISERS</button>
+                <button class="btn-advantages active-btn publisher-btn">FOR PUBLISHERS</button>
+                <button class="btn-advantages advertiser-btn">FOR ADVERTISERS</button>
             </div>
         </div>
         <div class="provide-stable-income-wrapper">
-            <div class="text-block-provide-wrapper">
+            <div class="text-block-provide-wrapper publisher-block">
                 <div class="title-provide">
                     We will provide a stable profit for your project, without losing or reducing audience engagement.
                 </div>
@@ -201,13 +286,33 @@
                         <li>Native ads match the design of the web page</li>
                     </ul>
                 </div>
-                <button class="btn-provide btn-color">PUBLISHER REGISTRATION</button>
+                <button class="btn-provide btn-color reg-modal-open">PUBLISHER REGISTRATION</button>
             </div>
+
+            <div class="text-block-provide-wrapper advertiser-block d-none">
+                <div class="title-provide">
+                    advertiser title
+                </div>
+                <div class="list-provide-block">
+                    <ul>
+                        <li>advertiser 1</li>
+                        <li>advertiser 2</li>
+                        <li>advertiser 3</li>
+                    </ul>
+                </div>
+                <button class="btn-provide btn-color reg-modal-open">ADVERTISER REGISTRATION</button>
+            </div>
+
             <div class="img-block-provide-wrapper">
-                <img src="img/Group 427.svg" alt="">
+                <img src="img/Group 427.svg" alt="" loading="lazy">
             </div>
         </div>
     </div>
+
+
+
+
+    
     <div class="love-advertisers-wrapper">
         <div class="love-advertisers-content-wrapper">
             <div class="title-love-advertisers">
@@ -217,7 +322,7 @@
             </div>
             <div class="love-advertisers-card-wrapper">
                 <div class="layout-wrapper-card-love-advertisers">
-                    <img src="img/logo.svg" alt="" height='65px'>
+                    <img src="img/Logo.svg" alt="" height='65px'>
                     <div style="font-family: 'Hind Madurai', sans-serif; font-size: 64px; color: #6F63FF; margin: 24px 0px; height: 25px;">
                         “
                     </div>
@@ -232,7 +337,7 @@
                     </div>
                 </div>
                 <div class="layout-wrapper-card-love-advertisers">
-                    <img src="img/logo.svg" alt="" height='65px'>
+                    <img src="img/Logo.svg" alt="" height='65px' loading="lazy">
                     <div style="font-family: 'Hind Madurai', sans-serif; font-size: 64px; color: #6F63FF; margin: 24px 0px; height: 25px;">
                         “
                     </div>
@@ -246,7 +351,7 @@
                     </div>
                 </div>
                 <div class="layout-wrapper-card-love-advertisers">
-                    <img src="img/logo.svg" alt="" height='65px'>
+                    <img src="img/Logo.svg" alt="" height='65px' loading="lazy">
                     <div style="font-family: 'Hind Madurai', sans-serif; font-size: 64px; color: #6F63FF; margin: 24px 0px; height: 25px;">
                         “
                     </div>
@@ -261,7 +366,7 @@
                     </div>
                 </div>
                 <div class="layout-wrapper-card-love-advertisers">
-                    <img src="img/logo.svg" alt="" height='65px'>
+                    <img src="img/Logo.svg" alt="" height='65px' loading="lazy">
                     <div style="font-family: 'Hind Madurai', sans-serif; font-size: 64px; color: #6F63FF; margin: 24px 0px; height: 25px;">
                         “
                     </div>
@@ -276,7 +381,7 @@
                 </div>
             </div>
             <div class="btn-started">
-                <button class="btn-monetization btn-color">GET STARTED</button>
+                <button class="btn-monetization btn-color reg-modal-open">GET STARTED</button>
             </div>
         </div>
     </div>
@@ -290,21 +395,21 @@
                     Discover easy campaign setup, effortless auto-optimization and rapid results
                 </div>
                 <div class="btn-time-start-wrapper">
-                    <button class="btn-time-start btn-color">
+                    <button class="btn-time-start btn-color reg-modal-open">
                         <div style="display:flex;flex-wrap:nowrap;">
-                            <div><img src="img/Play.png" alt=""></div>
+                            <div><img src="img/Play.png" alt="" loading="lazy"></div>
                             <div style="margin-left:5px;white-space:nowrap;">START TODAY</div>
                         </div>
                     </button>
                 </div>
                 <div class="right-block-time-to-started-wrapper">
-                    <img src="img/rocket2.svg" alt="" class="rocket-img">
+                    <img src="img/rocket2.svg" alt="" class="rocket-img" loading="lazy">
                 </div>
             </div>
         </div>
         <div class="questions-block-content-wrapper">
             <div class="left-block-inform-wrapper">
-                <img src="img/Rectangle 16.png" alt="" class="question-img">
+                <img src="img/Rectangle 16.svg" alt="" class="question-img" loading="lazy">
                 <div class="container-left-block-inform">
                     <div>
                         <div class="title-questions">
@@ -315,7 +420,7 @@
                         </div>
                     </div>
                     <div class="btn-questions-left-wrapper">
-                        <button class="btn-color">SEND US A MESSAGE!</button>
+                        <button class="btn-color reg-modal-open">SEND US A MESSAGE!</button>
                     </div>
                 </div>
             </div>
@@ -329,32 +434,37 @@
                             Join our great network of advertisers and publishers and boost your website's traffic and
                             revenue now!
                         </div>
-                        <form action="">
-                        <div class="radio-block-wrapper">
-                            <div class="first-radio-wrapper">
-                                <label for="role1" class="radio"><input type="radio" name="role" id="role1" class="radio"><span></span>I am an advertiser</label>
+<!--                        <form action="">-->
+                            <div class="radio-block-wrapper">
+                                <div class="first-radio-wrapper">
+                                    <label for="role1" class="radio"><input type="radio" name="role" id="role1"
+                                                                            class="radio"><span></span>I am an
+                                        advertiser</label>
+                                </div>
+                                <div class="second-radio-wrapper">
+                                    <label for="role3" class="radio"><input type="radio" name="role"
+                                                                            id="role3"><span></span>I am a
+                                        publisher</label>
+                                </div>
+                                <div class="third-radio-wrapper">
+                                    <label for="role2" class="radio"><input type="radio" name="role"
+                                                                            id="role2"><span></span>Audience development</label>
+                                </div>
                             </div>
-                            <div class="second-radio-wrapper">
-                                <label for="role3" class="radio"><input type="radio" name="role" id="role3"><span></span>I am a publisher</label>
-                            </div>
-                            <div class="third-radio-wrapper">
-                                <label for="role2" class="radio"><input type="radio" name="role" id="role2"><span></span>Audience development</label>
-                            </div>
-                         </div>
                             <div class="btn-ready">
-                                <button class="btn-monetization btn-color">GET STARTED</button>
+                                <button class="btn-monetization btn-color reg-modal-open">GET STARTED</button>
                             </div>
-                        </form>
+<!--                        </form>-->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="wrapper-success-modal" style=" display: none;">
+    <div class="wrapper-success-modal d-none" id="successModal">
         <div class="success-signed-wrapper">
             <div class="success-content-wrapper">
-                <img src="img/Vector.png" alt="" class="vector">
-                <img src="img/image 11.png" alt="" width="152px" height="161px" class="envelope">
+                <img src="img/Vector.png" alt="" class="vector-success vector-cursor" id="vectorSuccess" loading="lazy">
+                <img src="img/image 11.png" alt="" width="152px" height="161px" class="envelope" loading="lazy">
                 <div class="success-title">
                     Great! You’ve successfully signed up for Adenza
                 </div>
@@ -362,77 +472,123 @@
                     We’ve sent you lettr to confirm your email address. Please check your inbox
                 </div>
                 <div class="success-btn">
-                    <button class="btn-color style-btn-success">OK</button>
+                    <button class="btn-color style-btn-success" id="okBtn">OK</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="wrapper-success-modal" style="display: none;">
+    <div class="wrapper-registration-modal d-none" id="modalReg">
         <div class="registration-wrapper">
             <div class="registration-content-wrapper">
-                <img src="img/Vector.png" alt="" class="vector-success">
-                <img src="img/Logo.png" alt="" width="140px" height="29px">
+
+                <img src="img/Vector.png" alt="" class="vector-success vector-cursor" id="vectorReg" loading="lazy">
+                <img src="img/Logo.png" alt="" width="140px" height="29px" loading="lazy">
                 <div class="success-title">
                     Registration on Adenza
                 </div>
                 <div class="button-advantages-wrapper" style="margin-bottom: 20px;">
-                    <button class="btn-advantages">FOR PUBLISHERS</button>
-                    <button class="btn-advantages btn-color-advantages">FOR ADVERTISERS</button>
+                    <button class="btn-advantages active-btn publisher-btn">FOR PUBLISHERS</button>
+                    <button class="btn-advantages advertiser-btn">FOR ADVERTISERS</button>
                 </div>
-                <div class="field">
-                    <input type="text" placeholder="Name" class="icon" style="background-color: white;">
-                </div>
-                <div class="field">
-                    <input type="text" placeholder="E-mail" class="icon-mail" style="background-color: white;">
-                </div>
-                <div class="field">
-                    <input type="password" placeholder="Password" class="icon-pass" style="background-color: white;">
-                </div>
-                <div class="field">
-                    <input type="password" placeholder="Password" class="icon-pass" style="background-color: white;">
-                </div>
-                <div class="checkbox policy-wrapper">
-                    <input class="custom-checkbox" type="checkbox" id="policy-check" name="policy-check" style="display: none;">
-                    <label for="policy-check" style="margin: 0px 24px;"><span>Agree the <a href="">terms and policy</a></span></label>
-                </div>
-                <div class="field">
-                    <button class="btn-color style-btn-registration">REGISTRATION</button>
-                </div>
+
+                <form action="/send/send_1.php" method="post" id="submitForm" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="field" style="display: none">
+                        <input type="radio" class="publisher-radio" name="typeRegistration" value="publisher" checked>
+                        <input type="radio" class="advertiser-radio" name="typeRegistration" value="advertiser">
+                    </div>
+                    <div class="field">
+                        <img src="img/icon.png" style="position:absolute;top:15px;left:30px;width:20px;" loading="lazy">
+                        <input type="text" name="firstName" placeholder="Name" style="background-color: white;">
+                    </div>
+                    <div class="field">
+                        <img src="img/icon1.png" style="position:absolute;top:15px;left:30px;width:20px;">
+                        <input type="text" name="email" placeholder="E-mail" class="icon-mail" style="background-color: white;" loading="lazy">
+                    </div>
+                    <div class="field">
+                        <img src="img/icon2.png" style="position:absolute;top:15px;left:30px;width:20px;">
+                        <input type="password" name="password1" placeholder="Password" class="icon-pass" style="background-color: white;" loading="lazy">
+                    </div>
+                    <div class="field">
+                        <img src="img/icon2.png" style="position:absolute;top:15px;left:30px;width:20px;">
+                        <input type="password" name="password2" placeholder="Password" class="icon-pass" style="background-color: white;" loading="lazy">
+                    </div>
+                    <div class="checkbox policy-wrapper">
+                        <input class="custom-checkbox" type="checkbox" id="policy-check" name="policy-check"
+                               style="display: none;">
+                        <label for="policy-check" style="margin: 0px 24px;"><span>Agree the <a
+                                href="">terms and policy</a></span></label>
+                    </div>
+                    <div class="field">
+                        <button type="submit" class="btn-color style-btn-registration" id="regBtn">REGISTRATION</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
+    <div class="mobil-menu-block-wrapper d-none" id="mobilMenuContent">
+        <div class="mobil-menu-block">
+            <img src="img/Vector.png" alt="" class="vector-success-mob vector-cursor" id="closeMobilMenu" loading="lazy">
+            <div class=" mobil-logo">
+                <img src="img/Logo.svg" alt="" loading="lazy">
+            </div>
+            <div class="menu-list">
+                <a class=""
+                    href="">Advertiser
+                </a>
+                <a class=""
+                    href="">Affilate
+                </a>
+                <a class=""
+                    href="">Contacts
+                </a>
+            </div>
+            <div class="mobil-btn-block">
+                <button class="btn-indent">Log in</button>
+                <button class="btn-sign" style="background-color: #6F63FF; color: white; width: 125px; border: 0;">
+                    <div style="display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;" id="mobilMenuSign">
+                        <div><img src="img/Profile.png" alt="" loading="lazy"></div>
+                        <div style="margin-left:5px;white-space:nowrap;">Sign Up</div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <footer>
-    <div style="display: flex;flex-direction: column;align-items: center; font-size: 16px;">
-        <div class="logo-footer">
-            <img src="img/Logo.png" alt="">
-        </div>
-        <div style="max-width: 608px; text-align: center; margin: 20px 0px; color: #D0BCFF; font-size: 18px;">
-            © 2022 Adenza, Native advertising network
-        </div>
-        <div style="max-width: 608px; text-align: center; margin: 20px 0px;">
-            Registered address: 26 Sathorn Prime Tower, 10th Floor, Unit 01, Naradhiwas Rajanagarindra Road, Yannawa,
-            Sathorn, Bangkok 10120 Thailand
-        </div>
-        <div style="max-width: 548px; text-align: center; margin: 20px 0px;">
-            Company: Bangkok Search Technologies Co., Ltd. Tax ID: 0105554062872
-        </div>
-        <div class="footer-links">
-            <div class="footer-link">
-                <a href="#">Privacy Policy</a>
+        <div style="display: flex;flex-direction: column;align-items: center; font-size: 16px;">
+            <div class="logo-footer">
+                <img src="img/Logo.png" alt="" loading="lazy">
             </div>
-            <div class="footer-link">
-                <a href="#">Terms & Conditions</a>
+            <div style="max-width: 608px; text-align: center; margin: 20px 0px; color: #D0BCFF; font-size: 18px;">
+                © 2022 Adenza, Native advertising network
             </div>
-            <div class="footer-link">
-                <a href="#">FAQ</a>
+            <div style="max-width: 608px; text-align: center; margin: 20px 0px;">
+                Registered address: 26 Sathorn Prime Tower, 10th Floor, Unit 01, Naradhiwas Rajanagarindra Road,
+                Yannawa,
+                Sathorn, Bangkok 10120 Thailand
+            </div>
+            <div style="max-width: 548px; text-align: center; margin: 20px 0px;">
+                Company: Bangkok Search Technologies Co., Ltd. Tax ID: 0105554062872
+            </div>
+            <div class="footer-links">
+                <div class="footer-link">
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div class="footer-link">
+                    <a href="#">FAQ</a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </div>
 
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/adenza.js"></script>
 <script>
     $(document).ready(function () {
         var slider = $('.love-advertisers-card-wrapper');
@@ -487,17 +643,16 @@
                     slider.slick('unslick');
                 }
                 return;
-            }
-            else if (!slider.hasClass('slick-initialized')) {
+            } else if (!slider.hasClass('slick-initialized')) {
                 return slider.slick(settings);
             }
         });
         $(window).trigger('resize');
     });
 </script>
-</body>
 
-<!-- <div class="success-signed-wrapper">
-    .success-signed-form
-</div> -->
+<script>
+
+</script>
+</body>
 </html>
