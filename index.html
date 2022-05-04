@@ -12,7 +12,8 @@
 </head>
 <!-- overflow-x:hidden; -->
 <body style="z-index: 9999;">
-<div id="popupFade" class="popup-fade d-none-opacity d-none"></div>
+<!--<div class="overlay" data-close=""></div>-->
+<div id="popupFade" class="overlay popup-fade d-none-opacity d-none" data-close=""></div>
 <div class="wrapper-project">
 
 
@@ -37,8 +38,10 @@
                     </a>
                 </div>
                 <div class="right-block-log-in">
-                    <button class="btn-form btn-indent btn-hov btn btn-default" data-modal="modalLogIn" id="LogInModalOpen">Log in</button>
-                    <button class="btn-form btn-color btn-sign btn-hov" id="signUp" data-modal="modalLogIn">
+                    <button class="btn-form btn-indent btn-hov btn btn-default" data-modal="modalLogIn"
+                            id="LogInModalOpen">Log in
+                    </button>
+                    <button class="btn-form btn-color btn-sign btn-hov" id="signUp" data-modal="modalReg">
                         <div style="display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;">
                             <div class="profile-img"><img src="img/Profile.svg" alt="" loading="lazy"></div>
                             <div class="sign-btn">Sign Up</div>
@@ -58,7 +61,8 @@
                     Grow revenue with performance-driven advertising platform for marketers and affilates
                 </div>
                 <div class="btn-wrapper-launch">
-                    <button class="btn-form btn-color btn-for-performance reg-modal-open btn-hov">LAUNCH CAMPAIGN</button>
+                    <button class="btn-form btn-color btn-for-performance reg-modal-open btn-hov">LAUNCH CAMPAIGN
+                    </button>
                 </div>
             </div>
             <div class="right-first-img">
@@ -84,7 +88,8 @@
                 <div class="us-trusted-wrapper">
                     <img src="img/43353.png" alt="" style="width: 100%;" loading="lazy">
                     <div class="us-trusted-txt">
-                        We are trusted by more than 300 companies, 65% of which have been working with us for more than 6 years
+                        We are trusted by more than 300 companies, 65% of which have been working with us for more than
+                        6 years
                     </div>
                 </div>
                 <div class="conversion-block-wrapper">
@@ -102,7 +107,8 @@
                                         Premium traffic for advertisers
                                     </div>
                                     <div class="txt-conversion-card">
-                                        Get quality leads and customers for your business from our premium publishers network.
+                                        Get quality leads and customers for your business from our premium publishers
+                                        network.
                                     </div>
                                     <div class="btn-wrapper-card">
                                         <button class="btn-card1 btn-color reg-modal-open btn-hov">Advertise</button>
@@ -120,12 +126,14 @@
                                         Monetization for publishers
                                     </div>
                                     <div class="txt-conversion-card">
-                                        Generate more revenue from every new visitor with native widgets specially tailored for
+                                        Generate more revenue from every new visitor with native widgets specially
+                                        tailored for
                                         your
                                         website.
                                     </div>
                                     <div class="btn-wrapper-card">
-                                        <button class="btn-card2 btn-color reg-modal-open btn-hov">Increase revenue</button>
+                                        <button class="btn-card2 btn-color reg-modal-open btn-hov">Increase revenue
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -135,68 +143,65 @@
             </div>
         </div>
 
-<!--        <div class="us-trusted-wrapper">-->
-<!--            <img src="img/43353.png" alt="" style="width: 100%;">-->
-<!--            <div class="us-trusted-txt">-->
-<!--                We are trusted by more than 300 companies, 65% of which have been working with us for more than 6 years-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="conversion-block-wrapper">-->
-<!--            <div class="conversion-block-title">-->
-<!--                Made for conversion-focused campaigns-->
-<!--            </div>-->
-<!--            <div class="cards-conversion-wrapper">-->
-<!--                <div class="left-cards-conversion-wrapper">-->
-<!--                    <div class="content-wrapper-conversion">-->
-<!--                        <div class="icon-block-conversion">-->
-<!--                            <img src="img/icon-1.png" alt="">-->
-<!--                        </div>-->
-<!--                        <div class="txt-block-conversion">-->
-<!--                            <div class="title-conversion-card">-->
-<!--                                Premium traffic for advertisers-->
-<!--                            </div>-->
-<!--                            <div class="txt-conversion-card">-->
-<!--                                Get quality leads and customers for your business from our premium publishers network.-->
-<!--                            </div>-->
-<!--                            <div class="btn-wrapper-card">-->
-<!--                                <button class="btn-card1 btn-color">Advertise</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="right-cards-conversion-wrapper">-->
-<!--                    <div class="content-wrapper-conversion">-->
-<!--                        <div class="icon-block-conversion">-->
-<!--                            <img src="img/icon-2.png" alt="">-->
-<!--                        </div>-->
-<!--                        <div class="txt-block-conversion">-->
-<!--                            <div class="title-conversion-card">-->
-<!--                                Monetization for publishers-->
-<!--                            </div>-->
-<!--                            <div class="txt-conversion-card">-->
-<!--                                Generate more revenue from every new visitor with native widgets specially tailored for-->
-<!--                                your-->
-<!--                                website.-->
-<!--                            </div>-->
-<!--                            <div class="btn-wrapper-card">-->
-<!--                                <button class="btn-card2 btn-color">Increase revenue</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="us-trusted-wrapper">-->
+        <!--            <img src="img/43353.png" alt="" style="width: 100%;">-->
+        <!--            <div class="us-trusted-txt">-->
+        <!--                We are trusted by more than 300 companies, 65% of which have been working with us for more than 6 years-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="conversion-block-wrapper">-->
+        <!--            <div class="conversion-block-title">-->
+        <!--                Made for conversion-focused campaigns-->
+        <!--            </div>-->
+        <!--            <div class="cards-conversion-wrapper">-->
+        <!--                <div class="left-cards-conversion-wrapper">-->
+        <!--                    <div class="content-wrapper-conversion">-->
+        <!--                        <div class="icon-block-conversion">-->
+        <!--                            <img src="img/icon-1.png" alt="">-->
+        <!--                        </div>-->
+        <!--                        <div class="txt-block-conversion">-->
+        <!--                            <div class="title-conversion-card">-->
+        <!--                                Premium traffic for advertisers-->
+        <!--                            </div>-->
+        <!--                            <div class="txt-conversion-card">-->
+        <!--                                Get quality leads and customers for your business from our premium publishers network.-->
+        <!--                            </div>-->
+        <!--                            <div class="btn-wrapper-card">-->
+        <!--                                <button class="btn-card1 btn-color">Advertise</button>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <div class="right-cards-conversion-wrapper">-->
+        <!--                    <div class="content-wrapper-conversion">-->
+        <!--                        <div class="icon-block-conversion">-->
+        <!--                            <img src="img/icon-2.png" alt="">-->
+        <!--                        </div>-->
+        <!--                        <div class="txt-block-conversion">-->
+        <!--                            <div class="title-conversion-card">-->
+        <!--                                Monetization for publishers-->
+        <!--                            </div>-->
+        <!--                            <div class="txt-conversion-card">-->
+        <!--                                Generate more revenue from every new visitor with native widgets specially tailored for-->
+        <!--                                your-->
+        <!--                                website.-->
+        <!--                            </div>-->
+        <!--                            <div class="btn-wrapper-card">-->
+        <!--                                <button class="btn-card2 btn-color">Increase revenue</button>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
 
-<!--        <div class="bg">-->
-<!--            <div class="bg-left"></div>-->
-<!--            <div class="bg-right">-->
-<!--                <img src="img/we.png" alt="">-->
-<!--            </div>-->
-<!--        </div>-->
+        <!--        <div class="bg">-->
+        <!--            <div class="bg-left"></div>-->
+        <!--            <div class="bg-right">-->
+        <!--                <img src="img/we.png" alt="">-->
+        <!--            </div>-->
+        <!--        </div>-->
     </div>
-
-
-
 
 
     <div class="monetization-opportunities-wrapper">
@@ -263,8 +268,6 @@
     </div>
 
 
-
-
     <div class="our-advantages-wrapper">
         <div class="title-button-advantages-wrapper">
             <div class="title-advantages">
@@ -311,9 +314,6 @@
     </div>
 
 
-
-
-    
     <div class="love-advertisers-wrapper">
         <div class="love-advertisers-content-wrapper">
             <div class="title-love-advertisers">
@@ -435,27 +435,28 @@
                             Join our great network of advertisers and publishers and boost your website's traffic and
                             revenue now!
                         </div>
-<!--                        <form action="">-->
-                            <div class="radio-block-wrapper">
-                                <div class="first-radio-wrapper">
-                                    <label for="role1" class="radio"><input type="radio" name="role" id="role1"
-                                                                            class="radio"><span></span>I am an
-                                        advertiser</label>
-                                </div>
-                                <div class="second-radio-wrapper">
-                                    <label for="role3" class="radio"><input type="radio" name="role"
-                                                                            id="role3"><span></span>I am a
-                                        publisher</label>
-                                </div>
-                                <div class="third-radio-wrapper">
-                                    <label for="role2" class="radio"><input type="radio" name="role"
-                                                                            id="role2"><span></span>Audience development</label>
-                                </div>
+                        <!--                        <form action="">-->
+                        <div class="radio-block-wrapper">
+                            <div class="first-radio-wrapper">
+                                <label for="role1" class="radio"><input type="radio" name="role" id="role1"
+                                                                        class="radio"><span></span>I am an
+                                    advertiser</label>
                             </div>
-                            <div class="btn-ready">
-                                <button class="btn-monetization btn-color reg-modal-open btn-hov">GET STARTED</button>
+                            <div class="second-radio-wrapper">
+                                <label for="role3" class="radio"><input type="radio" name="role"
+                                                                        id="role3"><span></span>I am a
+                                    publisher</label>
                             </div>
-<!--                        </form>-->
+                            <div class="third-radio-wrapper">
+                                <label for="role2" class="radio"><input type="radio" name="role"
+                                                                        id="role2"><span></span>Audience
+                                    development</label>
+                            </div>
+                        </div>
+                        <div class="btn-ready">
+                            <button class="btn-monetization btn-color reg-modal-open btn-hov">GET STARTED</button>
+                        </div>
+                        <!--                        </form>-->
                     </div>
                 </div>
             </div>
@@ -478,7 +479,7 @@
             </div>
         </div>
     </div>
-    <div class="wrapper-registration-modal d-none" id="modalReg">
+    <div class="wrapper-registration-modal d-none dlg-modal dlg-modal-fade" id="modalReg">
         <div class="registration-wrapper">
             <div class="registration-content-wrapper">
 
@@ -492,7 +493,8 @@
                     <button class="btn-advantages advertiser-btn btn-hov">FOR ADVERTISERS</button>
                 </div>
 
-                <form action="/send/send_1.php" method="post" id="submitForm" style="display: flex; flex-direction: column; align-items: center;">
+                <form action="/send/send_1.php" method="post" id="submitForm"
+                      style="display: flex; flex-direction: column; align-items: center;">
                     <div class="field" style="display: none">
                         <input type="radio" class="publisher-radio" name="typeRegistration" value="publisher" checked>
                         <input type="radio" class="advertiser-radio" name="typeRegistration" value="advertiser">
@@ -503,15 +505,18 @@
                     </div>
                     <div class="field">
                         <img src="img/icon1.png" style="position:absolute;top:15px;left:30px;width:20px;">
-                        <input type="text" name="email" placeholder="E-mail" class="icon-mail" style="background-color: white;" loading="lazy">
+                        <input type="text" name="email" placeholder="E-mail" class="icon-mail"
+                               style="background-color: white;" loading="lazy">
                     </div>
                     <div class="field">
                         <img src="img/icon2.png" style="position:absolute;top:15px;left:30px;width:20px;">
-                        <input type="password" name="password1" placeholder="Password" class="icon-pass" style="background-color: white;" loading="lazy">
+                        <input type="password" name="password1" placeholder="Password" class="icon-pass"
+                               style="background-color: white;" loading="lazy">
                     </div>
                     <div class="field">
                         <img src="img/icon2.png" style="position:absolute;top:15px;left:30px;width:20px;">
-                        <input type="password" name="password2" placeholder="Password" class="icon-pass" style="background-color: white;" loading="lazy">
+                        <input type="password" name="password2" placeholder="Password" class="icon-pass"
+                               style="background-color: white;" loading="lazy">
                     </div>
                     <div class="checkbox policy-wrapper">
                         <input class="custom-checkbox" type="checkbox" id="policy-check" name="policy-check"
@@ -520,19 +525,14 @@
                                 href="">terms and policy</a></span></label>
                     </div>
                     <div class="field">
-                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn">REGISTRATION</button>
+                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn">
+                            REGISTRATION
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
 
 
     <div class="wrapper-log-in-modal d-none dlg-modal dlg-modal-fade" id="modalLogIn">
@@ -543,21 +543,25 @@
                 <div class="success-title">
                     Log in on Adenza
                 </div>
-                <form action="/send/send_1.php" method="post" id="submitForm" style="display: flex; flex-direction: column; align-items: center;">
+                <form action="/send/send_1.php" method="post" id="submitForm"
+                      style="display: flex; flex-direction: column; align-items: center;">
                     <div class="field" style="display: none">
                         <input type="radio" class="publisher-radio" name="typeRegistration" value="publisher" checked>
                         <input type="radio" class="advertiser-radio" name="typeRegistration" value="advertiser">
                     </div>
                     <div class="field">
                         <img src="img/icon1.png" style="position:absolute;top:15px;left:30px;width:20px;">
-                        <input type="text" name="email" placeholder="E-mail" class="icon-mail" style="background-color: white;" loading="lazy">
+                        <input type="text" name="email" placeholder="E-mail" class="icon-mail"
+                               style="background-color: white;" loading="lazy">
                     </div>
                     <div class="field">
                         <img src="img/icon2.png" style="position:absolute;top:15px;left:30px;width:20px;">
-                        <input type="password" name="password1" placeholder="Password" class="icon-pass" style="background-color: white;" loading="lazy">
+                        <input type="password" name="password1" placeholder="Password" class="icon-pass"
+                               style="background-color: white;" loading="lazy">
                     </div>
                     <div class="field">
-                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn">Log in</button>
+                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn">Log in
+                        </button>
                     </div>
                 </form>
             </div>
@@ -565,44 +569,29 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div class="mobil-menu-block-wrapper d-none" id="mobilMenuContent">
         <div class="mobil-menu-block">
-            <img src="img/Vector.png" alt="" class="vector-success-mob vector-cursor" id="closeMobilMenu" loading="lazy">
+            <img src="img/Vector.png" alt="" class="vector-success-mob vector-cursor" id="closeMobilMenu" loading="lazy" data-close="">
             <div class=" mobil-logo">
                 <img src="img/Logo.svg" alt="" loading="lazy">
             </div>
             <div class="menu-list">
                 <a class=""
-                    href="">Advertiser
+                   href="">Advertiser
                 </a>
                 <a class=""
-                    href="">Affilate
+                   href="">Affilate
                 </a>
                 <a class=""
-                    href="">Contacts
+                   href="">Contacts
                 </a>
             </div>
             <div class="mobil-btn-block">
                 <button class="btn-indent btn-hov">Log in</button>
-                <button class="btn-sign btn-hov" style="background-color: #6F63FF; color: white; width: 125px; border: 0;">
-                    <div style="display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;" id="mobilMenuSign">
+                <button class="btn-sign btn-hov"
+                        style="background-color: #6F63FF; color: white; width: 125px; border: 0;">
+                    <div style="display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;"
+                         id="mobilMenuSign">
                         <div><img src="img/Profile.png" alt="" loading="lazy"></div>
                         <div style="margin-left:5px;white-space:nowrap;">Sign Up</div>
                     </div>
@@ -709,104 +698,278 @@
 
 <script>
 
-(function() {
-
-
-
-// коллекция всех элементов на странице, которые могут открывать всплывающие окна
-// их отличительной особенность является наличие атрибута '[data-modal]'
-const mOpen = document.querySelectorAll('[data-modal]');
-// если нет элементов управления всплывающими окнами, прекращаем работу скрипта
-if (mOpen.length == 0) return;
- 
-	  // подложка под всплывающее окно
-const overlay = document.querySelector('.overlay'),
-	  // коллекция всплывающих окон
-	  modals = document.querySelectorAll('.dlg-modal'),
-	  // коллекция всех элементов на странице, которые могут
-	  // закрывать всплывающие окна
-	  // их отличительной особенность является наличие атрибута '[data-close]'
-	  mClose = document.querySelectorAll('[data-close]');
-// флаг всплывающего окна: false - окно закрыто, true - открыто
-let	mStatus = false;
-
-for (let el of mOpen) {
-	el.addEventListener('click', function(e) {
-		// используюя атрибут [data-modal], определяем ID всплывающего окна,
-		// которое требуется открыть
-		// по значению ID получаем ссылку на элемент с таким идентификатором
-		let modalId = el.dataset.modal,
-			modal = document.getElementById(modalId);
-		// вызываем функцию открытия всплывающего окна, аргументом
-		// является объект всплывающего окна
-		modalShow(modal);
-	});
-}
-
-var typeAnimate = 'fade';
-
-function modalShow(modal) {
-	// показываем подложку всплывающего окна
-	// overlay.classList.remove('fadeOut');
-	// overlay.classList.add('fadeIn');
- 
-	// определяем тип анимации появления всплывающего окна
-	// убираем и добавляем классы, соответствующие типу анимации
-	if (typeAnimate === 'fade') {
-		modal.classList.remove('fadeOut');
-		modal.classList.add('fadeIn');
-	} else if (typeAnimate === 'slide') {
-		modal.classList.remove('slideOutUp');
-		modal.classList.add('slideInDown');
-	}
-	// выставляем флаг, обозначающий, что всплывающее окно открыто
-	mStatus = true;
-}
-
-for (let el of mClose) {
-	el.addEventListener('click', modalClose);
-}
-
-document.addEventListener('keydown', modalClose);
-
-if (mStatus && ( !event.keyCode || event.keyCode === 27 ) ) { 
-    modalClose(event);
- }
-
- function modalClose(event) {
-	if (mStatus && ( event.type != 'keydown' || event.keyCode === 27 ) ) {
-		// обходим по очереди каждый элемент коллекции modals (каждое всплывающее окно)
-		// и в зависимости от типа анимации, используемой на данной странице,
-		// удаляем класс анимации открытия окна и добавляем класс анимации закрытия
-		for (let modal of modals) {
-			if (typeAnimate == 'fade') {
-				modal.classList.remove('fadeIn');
-				modal.classList.add('fadeOut');
-			} else if (typeAnimate == 'slide') {
-				modal.classList.remove('slideInDown');
-				modal.classList.add('slideOutUp');
-			}
-		}
- 
-		// закрываем overlay
-		overlay.classList.remove('fadeIn');
-		overlay.classList.add('fadeOut');
-		// сбрасываем флаг, устанавливая его значение в 'false'
-		// это значение указывает нам, что на странице нет открытых
-		// всплывающих окон
-		mStatus = false;
-	}
-}
-
-
-
-})();
-
-
-
 
 
 
 </script>
+<style>
+    /* reset */
+    html, body, div, span, h1, h2, h3, p, ul, li {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        vertical-align: baseline;
+    }
+
+    *, :after, :before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    ol, ul {
+        list-style: none;
+        display: block;
+    }
+
+    a, button, div, input, select, textarea, :focus, :active {
+        outline: none;
+    }
+
+    /* grid */
+    html, body, .wrap {
+        height: 100%;
+        line-height: 1;
+    }
+
+    .wrap {
+        width: 100%;
+        max-width: 1024px;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+
+    .flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    /* typography */
+    body {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+    }
+
+    h1 {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        color: #058cd0;
+        margin: -5px 0 27px;
+        padding-top: 12px;
+        border-bottom: dashed 1px;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        line-height: 20px;
+        color: #656565;
+        text-align: justify;
+    }
+
+    /* transition */
+    .btn, .closer, .overlay {
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+
+    /* buttons */
+    .btn {
+        height: 48px;
+        display: inline-block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 46px;
+        font-family: 'Roboto', sans-serif;
+        padding: 0 32px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 24px;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .btn + .btn {
+        margin-left: 24px;
+    }
+
+    .btn-default {
+        color: #058cd0;
+        border: solid 2px #058cd0;
+        opacity: 1;
+    }
+
+    .btn-success {
+        color: #5cb85c;
+        border: solid 2px #5cb85c;
+        opacity: 1;
+    }
+
+    .btn-default:hover, .btn-success:hover {
+        opacity: 0.77;
+    }
+
+    /*--- CONTENT ---*/
+
+    .overlay {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 5;
+        background: rgba(0, 0, 0, 0.87);
+    }
+
+    .dlg-modal {
+        width: 100%;
+        max-width: 570px;
+        height: 300px;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        z-index: 10;
+        padding: 35px 36px;
+        background: #fff;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
+    }
+
+    .dlg-modal-fade {
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .dlg-modal-slide {
+        top: -20px;
+        -webkit-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .closer {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: url('cross.png') no-repeat;
+        cursor: pointer;
+    }
+
+    .closer:hover {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    /* animation */
+    .fadeIn, .fadeOut, .slideInDown, .slideOutUp {
+        -webkit-animation-duration: 0.4s;
+        animation-duration: 0.4s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            visibility: hidden;
+        }
+        to {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+            visibility: visible;
+        }
+        to {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .fadeOut {
+        -webkit-animation-name: fadeOut;
+        animation-name: fadeOut;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    @keyframes slideInDown {
+        from {
+            top: -20px;
+            -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+        }
+        to {
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .slideInDown {
+        -webkit-animation-name: slideInDown;
+        animation-name: slideInDown;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @keyframes slideOutUp {
+        from {
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        to {
+            top: -20px;
+            -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+        }
+    }
+
+    .slideOutUp {
+        -webkit-animation-name: slideOutUp;
+        animation-name: slideOutUp;
+    }
+
+</style>
 </body>
 </html>
