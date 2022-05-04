@@ -3,46 +3,28 @@
     const mOpen = document.querySelectorAll('[data-modal]');
     if (mOpen.length === 0) return;
 
-    // подложка под всплывающее окно
     const overlay = document.querySelector('.overlay'),
-        // коллекция всплывающих окон
         modals = document.querySelectorAll('.dlg-modal'),
-        // коллекция всех элементов на странице, которые могут
-        // закрывать всплывающие окна
-        // их отличительной особенность является наличие атрибута '[data-close]'
         mClose = document.querySelectorAll('[data-close]');
-    // флаг всплывающего окна: false - окно закрыто, true - открыто
     let mStatus = false;
 
     for (let el of mOpen) {
         el.addEventListener('click', function (e) {
-            // используюя атрибут [data-modal], определяем ID всплывающего окна,
-            // которое требуется открыть
-            // по значению ID получаем ссылку на элемент с таким идентификатором
             let modalId = el.dataset.modal,
-                modal = document.getElementById(modalId);
-            // вызываем функцию открытия всплывающего окна, аргументом
-            // является объект всплывающего окна
+            modal = document.getElementById(modalId);
             modalShow(modal);
         });
     }
 
-    // регистрируются обработчики событий на элементах, закрывающих
-    // всплывающие окна
     for (let el of mClose) {
         el.addEventListener('click', modalClose);
     }
 
-    // регистрируются обработчик события нажатия на клавишу
     document.addEventListener('keydown', modalClose);
 
     function modalShow(modal) {
-        // показываем подложку всплывающего окна
         overlay.classList.remove('fadeOut');
         overlay.classList.add('fadeIn');
-
-        // определяем тип анимации появления всплывающего окна
-        // убираем и добавляем классы, соответствующие типу анимации
         if (typeAnimate === 'fade') {
             modal.classList.remove('fadeOut');
             modal.classList.add('fadeIn');
@@ -50,15 +32,11 @@
             modal.classList.remove('slideOutUp');
             modal.classList.add('slideInDown');
         }
-        // выставляем флаг, обозначающий, что всплывающее окно открыто
         mStatus = true;
     }
 
     function modalClose(event) {
         if (mStatus && (event.type != 'keydown' || event.keyCode === 27)) {
-            // обходим по очереди каждый элемент коллекции modals (каждое всплывающее окно)
-            // и в зависимости от типа анимации, используемой на данной странице,
-            // удаляем класс анимации открытия окна и добавляем класс анимации закрытия
             for (let modal of modals) {
                 if (typeAnimate == 'fade') {
                     modal.classList.remove('fadeIn');
@@ -68,13 +46,8 @@
                     modal.classList.add('slideOutUp');
                 }
             }
-
-            // закрываем overlay
             overlay.classList.remove('fadeIn');
             overlay.classList.add('fadeOut');
-            // сбрасываем флаг, устанавливая его значение в 'false'
-            // это значение указывает нам, что на странице нет открытых
-            // всплывающих окон
             mStatus = false;
         }
     }
@@ -97,16 +70,6 @@
     let closeModalLogIn = document.getElementById('vectorLogIn');
     let modalLogIn = document.getElementById('modalLogIn');
     let LogInModalOpen = document.getElementById('LogInModalOpen');
-
-// let typeRegistrationButtons = document.querySelectorAll('.publisher-btn, .advertiser-btn');
-// Array.from(typeRegistrationButtons).forEach(function(btn) {
-//     btn.addEventListener('click', () => {
-//         if (!btn.classList.contains('active-btn')) {
-//             btn.classList.add('active-btn');
-//         }
-//     });
-// });
-
     let publisherBtn = document.querySelector('#modalReg .publisher-btn');
     let publisherRadio = document.querySelector('#modalReg .publisher-radio');
     let advertiserBtn = document.querySelector('#modalReg .advertiser-btn');
@@ -157,18 +120,10 @@
     });
 
     vectorSuccess.addEventListener('click', (e) => {
-        // popupFade.classList.add('d-none');
-        // successModal.classList.add('d-none');
         modalClose(e);
-
-        // successModal.classList.add('fadeOut');
-        // successModal.classList.add('d-none');
-        // successModal.classList.remove('fadeIn');
     });
 
     closeBtn.addEventListener('click', (e) => {
-        // popupFade.classList.add('d-none');
-        // modalReg.classList.add('d-none');
         modalClose(e);
     });
 
@@ -178,14 +133,10 @@
     });
 
     closeModalLogIn.addEventListener('click', (e) => {
-        // popupFade.classList.add('d-none');
-        // modalLogIn.classList.add('d-none');
         modalClose(e);
     });
 
     okBtn.addEventListener('click', (e) => {
-        // popupFade.classList.add('d-none');
-        // successModal.classList.add('d-none');
         modalClose(e);
     });
 
@@ -202,35 +153,22 @@
             modalReg.classList.remove('d-none');
         });
     }
-// regModalOpen.addEventListener('click', () => {
-//     popupFade.classList.remove('d-none');
-//     modalReg.classList.remove('d-none');
-// });
-// popupFade.addEventListener('click', () => {
-//     popupFade.classList.add('d-none');
-//     modalReg.classList.add('d-none');
-// });
 
     modalReg.addEventListener('click', (e) => {
-        //if (e.target.className === 'wrapper-registration-modal') {
         if (e.target.classList.contains('wrapper-registration-modal')) {
-            //popupFade.classList.add('d-none');
-            //popupFade.classList.add('fadeIn');
-            //popupFade.classList.add('fadeOut');
-            //modalReg.classList.add('d-none');
             modalClose(e);
         }
     });
 
     successModal.addEventListener('click', (e) => {
-        //if (e.target.className === 'wrapper-success-modal') {
         if (e.target.classList.contains('wrapper-success-modal')) {
-            // popupFade.classList.add('d-none');
-            // successModal.classList.add('d-none');
             modalClose(e);
-            // successModal.classList.add('fadeOut');
-            // successModal.classList.add('d-none');
-            // successModal.classList.remove('fadeIn');
+        }
+    });
+
+    modalLogIn.addEventListener('click', (e) => {
+        if (e.target.classList.contains('wrapper-log-in-modal')) {
+            modalClose(e);
         }
     });
 
@@ -242,11 +180,6 @@
             ['firstName', 'email', 'password1', 'password2'].forEach(function(el) {
                 console.log('el', submitForm.elements[el].value);
             });
-
-            // modalReg.classList.add('d-none');
-            // successModal.classList.remove('d-none');
-            //modalClose(e);
-            //modalShow(document.getElementById('successModal'));
 
             modalReg.classList.add('d-none');
             modalReg.classList.add('fadeOut');
@@ -269,12 +202,9 @@
     });
 
     okBtn.addEventListener('click', (e) => {
-        // popupFade.classList.add('d-none');
-        // successModal.classList.add('d-none');
         successModal.classList.add('fadeOut');
         successModal.classList.add('d-none');
         successModal.classList.remove('fadeIn');
-        //modalClose(e);
     });
 
     mobilMenu.addEventListener('click', () => {

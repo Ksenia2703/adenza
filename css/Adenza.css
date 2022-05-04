@@ -96,7 +96,7 @@ textarea:focus, input:focus{
     width: 100%;
     position: fixed;
     background-color: #F6EDFF;
-    z-index: 100;
+    z-index: 1;
     top: 0px;
 }
 
