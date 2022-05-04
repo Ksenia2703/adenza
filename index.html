@@ -13,7 +13,7 @@
 <!-- overflow-x:hidden; -->
 <body style="z-index: 9999;">
 <!--<div class="overlay" data-close=""></div>-->
-<div id="popupFade" class="overlay popup-fade d-none-opacity d-none" data-close=""></div>
+<div id="popupFade" class="overlay" data-close=""></div>
 <div class="wrapper-project">
 
 
@@ -38,7 +38,7 @@
                     </a>
                 </div>
                 <div class="right-block-log-in">
-                    <button class="btn-form btn-indent btn-hov btn btn-default" data-modal="modalLogIn"
+                    <button class="btn-form btn-indent btn-hov" data-modal="modalLogIn"
                             id="LogInModalOpen">Log in
                     </button>
                     <button class="btn-form btn-color btn-sign btn-hov" id="signUp" data-modal="modalReg">
@@ -61,7 +61,7 @@
                     Grow revenue with performance-driven advertising platform for marketers and affilates
                 </div>
                 <div class="btn-wrapper-launch">
-                    <button class="btn-form btn-color btn-for-performance reg-modal-open btn-hov">LAUNCH CAMPAIGN
+                    <button class="btn-form btn-color btn-for-performance reg-modal-open btn-hov" data-modal="modalReg">LAUNCH CAMPAIGN
                     </button>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                                         network.
                                     </div>
                                     <div class="btn-wrapper-card">
-                                        <button class="btn-card1 btn-color reg-modal-open btn-hov">Advertise</button>
+                                        <button class="btn-card1 btn-color reg-modal-open btn-hov" data-modal="modalReg">Advertise</button>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                                         website.
                                     </div>
                                     <div class="btn-wrapper-card">
-                                        <button class="btn-card2 btn-color reg-modal-open btn-hov">Increase revenue
+                                        <button class="btn-card2 btn-color reg-modal-open btn-hov" data-modal="modalReg">Increase revenue
                                         </button>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-monetization btn-color reg-modal-open btn-hov">GET STARTED</button>
+            <button class="btn-monetization btn-color reg-modal-open btn-hov" data-modal="modalReg">GET STARTED</button>
         </div>
     </div>
 
@@ -290,7 +290,7 @@
                         <li>Native ads match the design of the web page</li>
                     </ul>
                 </div>
-                <button class="btn-provide btn-color reg-modal-open btn-hov">PUBLISHER REGISTRATION</button>
+                <button class="btn-provide btn-color reg-modal-open btn-hov" data-modal="modalReg">PUBLISHER REGISTRATION</button>
             </div>
 
             <div class="text-block-provide-wrapper advertiser-block d-none">
@@ -304,7 +304,7 @@
                         <li>advertiser 3</li>
                     </ul>
                 </div>
-                <button class="btn-provide btn-color reg-modal-open btn-hov">ADVERTISER REGISTRATION</button>
+                <button class="btn-provide btn-color reg-modal-open btn-hov" data-modal="modalReg">ADVERTISER REGISTRATION</button>
             </div>
 
             <div class="img-block-provide-wrapper">
@@ -382,7 +382,7 @@
                 </div>
             </div>
             <div class="btn-started">
-                <button class="btn-monetization btn-color reg-modal-open btn-hov">GET STARTED</button>
+                <button class="btn-monetization btn-color reg-modal-open btn-hov" data-modal="modalReg">GET STARTED</button>
             </div>
         </div>
     </div>
@@ -396,7 +396,7 @@
                     Discover easy campaign setup, effortless auto-optimization and rapid results
                 </div>
                 <div class="btn-time-start-wrapper">
-                    <button class="btn-time-start btn-color reg-modal-open btn-hov">
+                    <button class="btn-time-start btn-color reg-modal-open btn-hov" data-modal="modalReg">
                         <div style="display:flex;flex-wrap:nowrap;">
                             <div><img src="img/Play.png" alt="" loading="lazy"></div>
                             <div style="margin-left:5px;white-space:nowrap;">START TODAY</div>
@@ -421,7 +421,7 @@
                         </div>
                     </div>
                     <div class="btn-questions-left-wrapper">
-                        <button class="btn-color reg-modal-open btn-hov">SEND US A MESSAGE!</button>
+                        <button class="btn-color reg-modal-open btn-hov" data-modal="modalReg">SEND US A MESSAGE!</button>
                     </div>
                 </div>
             </div>
@@ -454,7 +454,7 @@
                             </div>
                         </div>
                         <div class="btn-ready">
-                            <button class="btn-monetization btn-color reg-modal-open btn-hov">GET STARTED</button>
+                            <button class="btn-monetization btn-color reg-modal-open btn-hov" data-modal="modalReg">GET STARTED</button>
                         </div>
                         <!--                        </form>-->
                     </div>
@@ -474,7 +474,7 @@
                     We’ve sent you lettr to confirm your email address. Please check your inbox
                 </div>
                 <div class="success-btn">
-                    <button class="btn-color style-btn-success btn-hov" id="okBtn">OK</button>
+                    <button class="btn-color style-btn-success btn-hov" id="okBtn" data-modal="successModal">OK</button>
                 </div>
             </div>
         </div>
@@ -702,274 +702,6 @@
 
 
 </script>
-<style>
-    /* reset */
-    html, body, div, span, h1, h2, h3, p, ul, li {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        vertical-align: baseline;
-    }
 
-    *, :after, :before {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    ol, ul {
-        list-style: none;
-        display: block;
-    }
-
-    a, button, div, input, select, textarea, :focus, :active {
-        outline: none;
-    }
-
-    /* grid */
-    html, body, .wrap {
-        height: 100%;
-        line-height: 1;
-    }
-
-    .wrap {
-        width: 100%;
-        max-width: 1024px;
-        position: relative;
-        margin: 0 auto;
-        padding-top: 50px;
-    }
-
-    .flex {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-
-    /* typography */
-    body {
-        font-size: 16px;
-        line-height: 24px;
-        font-family: 'Roboto', sans-serif;
-        color: #333;
-    }
-
-    h1 {
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 24px;
-    }
-
-    h2 {
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 30px;
-        color: #058cd0;
-        margin: -5px 0 27px;
-        padding-top: 12px;
-        border-bottom: dashed 1px;
-    }
-
-    h3 {
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 24px;
-        margin-bottom: 12px;
-    }
-
-    p {
-        line-height: 20px;
-        color: #656565;
-        text-align: justify;
-    }
-
-    /* transition */
-    .btn, .closer, .overlay {
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
-    }
-
-    /* buttons */
-    .btn {
-        height: 48px;
-        display: inline-block;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 46px;
-        font-family: 'Roboto', sans-serif;
-        padding: 0 32px;
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        border-radius: 24px;
-        border: 0;
-        background: transparent;
-        cursor: pointer;
-    }
-
-    .btn + .btn {
-        margin-left: 24px;
-    }
-
-    .btn-default {
-        color: #058cd0;
-        border: solid 2px #058cd0;
-        opacity: 1;
-    }
-
-    .btn-success {
-        color: #5cb85c;
-        border: solid 2px #5cb85c;
-        opacity: 1;
-    }
-
-    .btn-default:hover, .btn-success:hover {
-        opacity: 0.77;
-    }
-
-    /*--- CONTENT ---*/
-
-    .overlay {
-        opacity: 0;
-        visibility: hidden;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: 5;
-        background: rgba(0, 0, 0, 0.87);
-    }
-
-    .dlg-modal {
-        width: 100%;
-        max-width: 570px;
-        height: 300px;
-        opacity: 0;
-        visibility: hidden;
-        text-align: center;
-        position: fixed;
-        left: 50%;
-        z-index: 10;
-        padding: 35px 36px;
-        background: #fff;
-        border-radius: 10px;
-        -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
-    }
-
-    .dlg-modal-fade {
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-
-    .dlg-modal-slide {
-        top: -20px;
-        -webkit-transform: translate(-50%, -100%);
-        transform: translate(-50%, -100%);
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .closer {
-        width: 40px;
-        height: 40px;
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        background: url('cross.png') no-repeat;
-        cursor: pointer;
-    }
-
-    .closer:hover {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-
-    /* animation */
-    .fadeIn, .fadeOut, .slideInDown, .slideOutUp {
-        -webkit-animation-duration: 0.4s;
-        animation-duration: 0.4s;
-        -webkit-animation-timing-function: linear;
-        animation-timing-function: linear;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            visibility: hidden;
-        }
-        to {
-            opacity: 1;
-            visibility: visible;
-        }
-    }
-
-    .fadeIn {
-        -webkit-animation-name: fadeIn;
-        animation-name: fadeIn;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    @keyframes fadeOut {
-        from {
-            opacity: 1;
-            visibility: visible;
-        }
-        to {
-            opacity: 0;
-            visibility: hidden;
-        }
-    }
-
-    .fadeOut {
-        -webkit-animation-name: fadeOut;
-        animation-name: fadeOut;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    @keyframes slideInDown {
-        from {
-            top: -20px;
-            -webkit-transform: translate(-50%, -100%);
-            transform: translate(-50%, -100%);
-        }
-        to {
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-    }
-
-    .slideInDown {
-        -webkit-animation-name: slideInDown;
-        animation-name: slideInDown;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    @keyframes slideOutUp {
-        from {
-            top: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-        }
-        to {
-            top: -20px;
-            -webkit-transform: translate(-50%, -100%);
-            transform: translate(-50%, -100%);
-        }
-    }
-
-    .slideOutUp {
-        -webkit-animation-name: slideOutUp;
-        animation-name: slideOutUp;
-    }
-
-</style>
 </body>
 </html>

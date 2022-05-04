@@ -2513,21 +2513,42 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/* .dlg-modal {
-	width: 100%;
+.dlg-modal {
+	/* width: 100%;
 	max-width: 570px;
 	height: 300px;
 	opacity: 0;
-	visibility: hidden;
+	visibility: hidden; */
 	text-align: center;
 	position: fixed;
 	left: 50%;
-	z-index: 10;
+	/* z-index: 10;
 	padding: 35px 36px;
 	background: #fff;
 	border-radius: 10px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.85);
-} */
+	box-shadow: 0 0 20px rgba(0,0,0,0.85); */
+}
+.overlay {
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 5;
+        background: rgba(0, 0, 0, 0.87);
+    }
+.closer {
+        width: 40px;
+        height: 40px;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background: url('cross.png') no-repeat;
+        cursor: pointer;
+    }
 .dlg-modal-fade {
 	top: 50%;
 	transform: translate(-50%, -50%);
@@ -2538,10 +2559,16 @@ body::-webkit-scrollbar-thumb {
 	visibility: visible;
 	opacity: 1;
 }
+.closer:hover {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+}
  
 .fadeIn, .fadeOut, .slideInDown, .slideOutUp {
-	animation-duration: 0.4s;
-	animation-timing-function: linear;
+	-webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
  
 @keyframes fadeIn { 
@@ -2558,7 +2585,7 @@ body::-webkit-scrollbar-thumb {
 	animation-name: fadeIn;
 	opacity: 1;
 	visibility: visible;
-    left: 50%;
+    /* left: 50%; */
 }
  
 @keyframes fadeOut { 
@@ -2580,10 +2607,12 @@ body::-webkit-scrollbar-thumb {
 @keyframes slideInDown { 
 	from {
 		top: -20px;
+        -webkit-transform: translate(-50%, -100%);
 		transform: translate(-50%, -100%);
 	}
 	to {
 		top: 50%;
+        -webkit-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 	}
 }
@@ -2593,14 +2622,20 @@ body::-webkit-scrollbar-thumb {
 	transform: translate(-50%, -50%);
 }
  
-@keyframes slideOutUp { 
-	from {
-		top: 50%;
-		transform: translate(-50%, -50%);
-	}
-	to {
-		top: -20px;
-		transform: translate(-50%, -100%);
-	}
+@keyframes slideOutUp {
+    from {
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    to {
+        top: -20px;
+        -webkit-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+    }
 }
-.slideOutUp { animation-name: slideOutUp; }
+
+.slideOutUp {
+    -webkit-animation-name: slideOutUp;
+    animation-name: slideOutUp;
+}

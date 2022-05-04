@@ -1,10 +1,6 @@
 (function () {
     var typeAnimate = 'fade';
-    // коллекция всех элементов на странице, которые могут открывать всплывающие окна
-    // их отличительной особенность является наличие атрибута '[data-modal]'
     const mOpen = document.querySelectorAll('[data-modal]');
-    // если нет элементов управления всплывающими окнами, прекращаем работу скрипта
-
     if (mOpen.length === 0) return;
 
     // подложка под всплывающее окно
@@ -182,6 +178,12 @@
         modalClose(e);
     });
 
+    okBtn.addEventListener('click', (e) => {
+        // popupFade.classList.add('d-none');
+        // successModal.classList.add('d-none');
+        modalClose(e);
+    });
+
     modalLogIn.addEventListener('click', (e) => {
         if (e.target.className === 'wrapper-log-in-modal') {
             popupFade.classList.add('d-none');
@@ -258,51 +260,6 @@
     });
 
     function validateForm(form) {
-        /*
-        if (form.elements['firstName'].value.trim() === '') {
-            alert('Please, enter your full name');
-            return false;
-        }
-        if (form.elements['firstName'].value.trim().length < 2) {
-            alert('Please, enter your full name');
-            return false;
-        }
-
-        if (form.elements['email'].value.trim() === '') {
-            alert('Please, enter your email');
-            return false;
-        }
-        var emailReg = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-        var correctEmail = emailReg.test(String(form.elements['email'].value).toLowerCase());
-        if (!correctEmail) {
-            alert('Please, enter correct email');
-            return false;
-        }
-
-        if (form.elements['password1'].value.trim() === '') {
-            alert('Please, enter your password');
-            return false;
-        }
-        var passwordReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
-        var passwordValue1 = form.elements['password1'].value;
-        if (!passwordValue1.match(passwordReg)) {
-            alert('Please, enter correct password');
-            return false;
-        }
-        var passwordValue2 = form.elements['password2'].value;
-        if (passwordValue1 !== passwordValue2) {
-            alert('Please, enter same password');
-            return false;
-        }
-
-        if (!form.elements['policy-check'].checked) {
-            alert('Please, check agree terms and policy');
-            return false;
-        }
-
-        return true;
-         */
-
         return validateName(form) && validateEmail(form) && validatePassword(form) && validateCheckBoxAgree(form);
     }
 
