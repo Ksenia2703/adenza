@@ -9,7 +9,7 @@
     let mStatus = false;
 
     for (let el of mOpen) {
-        el.addEventListener('click', function (e) {
+        el.addEventListener('click', function() {
             let modalId = el.dataset.modal,
             modal = document.getElementById(modalId);
             modalShow(modal);
@@ -36,12 +36,12 @@
     }
 
     function modalClose(event) {
-        if (mStatus && (event.type != 'keydown' || event.keyCode === 27)) {
+        if (mStatus && (event.type !== 'keydown' || event.keyCode === 27)) {
             for (let modal of modals) {
-                if (typeAnimate == 'fade') {
+                if (typeAnimate === 'fade') {
                     modal.classList.remove('fadeIn');
                     modal.classList.add('fadeOut');
-                } else if (typeAnimate == 'slide') {
+                } else if (typeAnimate === 'slide') {
                     modal.classList.remove('slideInDown');
                     modal.classList.add('slideOutUp');
                 }
@@ -69,11 +69,17 @@
     let regModalOpen = document.getElementsByClassName('reg-modal-open');
     let closeModalLogIn = document.getElementById('vectorLogIn');
     let modalLogIn = document.getElementById('modalLogIn');
-    let LogInModalOpen = document.getElementById('LogInModalOpen');
+    let logInModalOpen = document.getElementById('logInModalOpen');
+    let mobileLogIn = document.getElementById('mobileLogIn');
+    let logIn = document.getElementById('logIn');
     let publisherBtn = document.querySelector('#modalReg .publisher-btn');
     let publisherRadio = document.querySelector('#modalReg .publisher-radio');
     let advertiserBtn = document.querySelector('#modalReg .advertiser-btn');
     let advertiserRadio = document.querySelector('#modalReg .advertiser-radio');
+
+    logIn.addEventListener('click', (e) => {
+        e.preventDefault();
+    });
 
     publisherBtn.addEventListener('click', () => {
         if (!publisherBtn.classList.contains('active-btn')) {
@@ -127,7 +133,12 @@
         modalClose(e);
     });
 
-    LogInModalOpen.addEventListener('click', () => {
+    logInModalOpen.addEventListener('click', () => {
+        popupFade.classList.remove('d-none');
+        modalLogIn.classList.remove('d-none');
+    });
+
+    mobileLogIn.addEventListener('click', () => {
         popupFade.classList.remove('d-none');
         modalLogIn.classList.remove('d-none');
     });
@@ -141,7 +152,7 @@
     });
 
     modalLogIn.addEventListener('click', (e) => {
-        if (e.target.className === 'wrapper-log-in-modal') {
+        if (e.target.classList.contains('wrapper-log-in-modal')) {
             popupFade.classList.add('d-none');
             modalLogIn.classList.add('d-none');
         }
@@ -201,7 +212,7 @@
         }
     });
 
-    okBtn.addEventListener('click', (e) => {
+    okBtn.addEventListener('click', () => {
         successModal.classList.add('fadeOut');
         successModal.classList.add('d-none');
         successModal.classList.remove('fadeIn');
@@ -222,8 +233,7 @@
     });
 
     function validateForm(form) {
-        return true;
-        //return validateName(form) && validateEmail(form) && validatePassword(form) && validateCheckBoxAgree(form);
+        return validateName(form) && validateEmail(form) && validatePassword(form) && validateCheckBoxAgree(form);
     }
 
     function validateName(form) {
