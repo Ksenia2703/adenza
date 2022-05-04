@@ -235,7 +235,9 @@
                 submitForm.elements[el].value = '';
             });
             submitForm.elements['policy-check'].checked = false;
-
+            publisherBtn.classList.add('active-btn');
+            publisherRadio.checked = true;
+            advertiserBtn.classList.remove('active-btn');
             //submitForm.submit();
         }
     });
