@@ -543,11 +543,6 @@ textarea:focus, input:focus{
     width: 50%;
 }
 
-@media (max-width: 1350px) {
-    .right-first-img {
-    }
-}
-
 @media (max-width: 1165px) {
     .right-first-img {
         /* right: 86px; */
@@ -601,41 +596,8 @@ textarea:focus, input:focus{
 }
 
 .computer-img{
-    /* width: 810px; */
-    /* position: absolute; */
     height: auto;
     width: 103%;
-}
-
-@media (max-width: 1400px) {
-    .devices-img img {
-        /* max-width: 735px; */
-        /* width: 100%; */
-    }
-}
-
-@media (max-width: 1350px) {
-    .devices-img img {
-        /* max-width: 690px; */
-    }
-}
-
-@media (max-width: 1350px) {
-    .devices-img img {
-        /* max-width: 690px; */
-    }
-}
-
-@media (max-width: 1165px) {
-    .devices-img img {
-        /* max-width: 600px; */
-    }
-}
-
-@media (max-width: 1050px) {
-    .devices-img img {
-        /* max-width: 550px; */
-    }
 }
 
 .hand-on-devices {
@@ -733,11 +695,7 @@ textarea:focus, input:focus{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    /* background: #ffe28f61; */
-    /* filter: blur(500px); */
-    /* max-width: 1318px; */
     align-items: center;
-    /* background: url(../img/df.png); */
 }
 
 .hand-img {
@@ -757,7 +715,6 @@ textarea:focus, input:focus{
     font-size: 45px;
     line-height: 52px;
     color: #1D192B;
-    /* width: 829px; */
     width: 90%;
 }
 
@@ -792,11 +749,8 @@ textarea:focus, input:focus{
 
 .left-cards-conversion-wrapper {
     max-width: 536px;
-    /* height: 312px; */
     background: #FFFFFF;
     border-radius: 20px;
-    /* margin-right: 32px; */
-    /* width: 40%; */
     box-sizing: border-box;
     width: 48%;
 }
@@ -810,12 +764,10 @@ textarea:focus, input:focus{
 
 .right-cards-conversion-wrapper {
     max-width: 536px;
-    /* height: 312px; */
     background: #FFFFFF;
     border-radius: 20px;
     box-shadow: -60px 0px 80px rgb(0 0 0 / 5%);
     width: 48%;
-    /*position: relative;*/
     height: 100%;
 }
 
@@ -827,7 +779,6 @@ textarea:focus, input:focus{
 
 .content-wrapper-conversion {
     display: flex;
-    /*min-height: 310px;*/
     padding-bottom: 40px;
     height: 100%;
 }
@@ -850,13 +801,6 @@ textarea:focus, input:focus{
 
 
 .txt-block-conversion {
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: flex-end;*/
-    /*padding: 40px 10px 35px 30px;*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /* justify-content: flex-end; */
     padding: 40px 10px 0 30px;
     display: flex;
     flex-direction: column;

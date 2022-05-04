@@ -240,7 +240,6 @@
             alert('Please, enter your full name');
             return false;
         }
-
         return true;
     }
 
