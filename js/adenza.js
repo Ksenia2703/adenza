@@ -12,6 +12,9 @@ let mobilMenuContent = document.getElementById('mobilMenuContent');
 let closeMobilMenu = document.getElementById('closeMobilMenu');
 let mobilMenuSign = document.getElementById('mobilMenuSign');
 let regModalOpen = document.getElementsByClassName('reg-modal-open');
+let closeModalLogIn = document.getElementById('vectorLogIn');
+let modalLogIn = document.getElementById('modalLogIn');
+let LogInModalOpen = document.getElementById('LogInModalOpen');
 
 // let typeRegistrationButtons = document.querySelectorAll('.publisher-btn, .advertiser-btn');
 // Array.from(typeRegistrationButtons).forEach(function(btn) {
@@ -79,6 +82,23 @@ vectorSuccess.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     popupFade.classList.add('d-none');
     modalReg.classList.add('d-none');
+});
+
+LogInModalOpen.addEventListener('click', () => {
+    popupFade.classList.remove('d-none');
+    modalLogIn.classList.remove('d-none');
+});
+
+closeModalLogIn.addEventListener('click', () => {
+    popupFade.classList.add('d-none');
+    modalLogIn.classList.add('d-none');
+});
+
+modalLogIn.addEventListener('click', (e) => {
+    if (e.target.className === 'wrapper-log-in-modal') {
+        popupFade.classList.add('d-none');
+        modalLogIn.classList.add('d-none');
+    }
 });
 
 for(let i = 0; i < regModalOpen.length; i++) {

@@ -1011,6 +1011,10 @@ textarea:focus, input:focus{
     }
 }
 
+.profile-img {
+    display: flex;
+}
+
 @media (max-width: 500px) {
     .profile-img {
         display: none;
@@ -1035,8 +1039,6 @@ textarea:focus, input:focus{
 .container-monetization-content {
     margin-left: 40px;
     margin-top: 40px;
-    /*width: 243px;*/
-    /*height: 104px;*/
 }
 
 .title-card-monetization {
@@ -2041,15 +2043,20 @@ form p {
     }
 }
 
-.registration-wrapper {
+.registration-wrapper,
+.log-in-wrapper {
     width: 75%;
     display: flex;
     justify-content: center;
     max-width: 560px;
     background: #ffffff;
     border-radius: 20px;
-    top: 0%;
+    top: 13%;
     position: absolute;
+}
+
+.log-in-wrapper {
+    top: 25%;
 }
 
 @media (max-width: 550px) {
@@ -2064,7 +2071,8 @@ form p {
     }
 }
 
-.registration-content-wrapper {
+.registration-content-wrapper,
+.log-in-content-wrapper {
     display: flex;
     justify-content: center;
     /* max-width: 420px; */
@@ -2194,7 +2202,8 @@ form p {
 }
 
 .wrapper-success-modal,
-.wrapper-registration-modal {
+.wrapper-registration-modal,
+.wrapper-log-in-modal {
     width: 100%;
     /* min-height: 300px; */
     position: fixed;
@@ -2381,7 +2390,6 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-
 @media (max-width: 850px) {
     .bg-wrapper {
         min-height: 860px;
@@ -2478,3 +2486,121 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+
+.btn-hov:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.20s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .dlg-modal {
+	width: 100%;
+	max-width: 570px;
+	height: 300px;
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	z-index: 10;
+	padding: 35px 36px;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.85);
+} */
+.dlg-modal-fade {
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.dlg-modal-slide {
+	top: -20px;
+	transform: translate(-50%, -100%);
+	visibility: visible;
+	opacity: 1;
+}
+ 
+.fadeIn, .fadeOut, .slideInDown, .slideOutUp {
+	animation-duration: 0.4s;
+	animation-timing-function: linear;
+}
+ 
+@keyframes fadeIn { 
+	from {
+		opacity: 0;
+		visibility: hidden;
+	}
+	to { 
+		opacity:1;
+		visibility: visible; 
+	}
+}
+.fadeIn {
+	animation-name: fadeIn;
+	opacity: 1;
+	visibility: visible;
+    left: 50%;
+}
+ 
+@keyframes fadeOut { 
+	from {
+		opacity: 1;
+		visibility: visible;
+	}
+	to {
+		opacity:0;
+		visibility: hidden;
+	}
+}
+.fadeOut {
+	animation-name: fadeOut;
+	opacity: 0;
+	visibility: hidden;
+}
+ 
+@keyframes slideInDown { 
+	from {
+		top: -20px;
+		transform: translate(-50%, -100%);
+	}
+	to {
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.slideInDown {
+	animation-name: slideInDown;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+ 
+@keyframes slideOutUp { 
+	from {
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	to {
+		top: -20px;
+		transform: translate(-50%, -100%);
+	}
+}
+.slideOutUp { animation-name: slideOutUp; }

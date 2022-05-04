@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/Adenza.css?v=9">
 
 </head>
-<body style="overflow-x:hidden; z-index: 9999;">
+<!-- overflow-x:hidden; -->
+<body style="z-index: 9999;">
 <div id="popupFade" class="popup-fade d-none-opacity d-none"></div>
 <div class="wrapper-project">
 
@@ -36,10 +37,10 @@
                     </a>
                 </div>
                 <div class="right-block-log-in">
-                    <button class="btn-form btn-indent">Log in</button>
-                    <button class="btn-form btn-color btn-sign" id="signUp">
+                    <button class="btn-form btn-indent btn-hov btn btn-default" data-modal="modalLogIn" id="LogInModalOpen">Log in</button>
+                    <button class="btn-form btn-color btn-sign btn-hov" id="signUp" data-modal="modalLogIn">
                         <div style="display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;">
-                            <div class="profile-img" style="display: flex;"><img src="img/Profile.png" alt="" loading="lazy"></div>
+                            <div class="profile-img"><img src="img/Profile.svg" alt="" loading="lazy"></div>
                             <div class="sign-btn">Sign Up</div>
                         </div>
                     </button>
@@ -57,7 +58,7 @@
                     Grow revenue with performance-driven advertising platform for marketers and affilates
                 </div>
                 <div class="btn-wrapper-launch">
-                    <button class="btn-form btn-color btn-for-performance reg-modal-open">LAUNCH CAMPAIGN</button>
+                    <button class="btn-form btn-color btn-for-performance reg-modal-open btn-hov">LAUNCH CAMPAIGN</button>
                 </div>
             </div>
             <div class="right-first-img">
@@ -104,7 +105,7 @@
                                         Get quality leads and customers for your business from our premium publishers network.
                                     </div>
                                     <div class="btn-wrapper-card">
-                                        <button class="btn-card1 btn-color reg-modal-open">Advertise</button>
+                                        <button class="btn-card1 btn-color reg-modal-open btn-hov">Advertise</button>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +125,7 @@
                                         website.
                                     </div>
                                     <div class="btn-wrapper-card">
-                                        <button class="btn-card2 btn-color reg-modal-open">Increase revenue</button>
+                                        <button class="btn-card2 btn-color reg-modal-open btn-hov">Increase revenue</button>
                                     </div>
                                 </div>
                             </div>
@@ -257,7 +258,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-monetization btn-color reg-modal-open">GET STARTED</button>
+            <button class="btn-monetization btn-color reg-modal-open btn-hov">GET STARTED</button>
         </div>
     </div>
 
@@ -270,8 +271,8 @@
                 Our advantages
             </div>
             <div class="button-advantages-wrapper">
-                <button class="btn-advantages active-btn publisher-btn">FOR PUBLISHERS</button>
-                <button class="btn-advantages advertiser-btn">FOR ADVERTISERS</button>
+                <button class="btn-advantages active-btn publisher-btn btn-hov">FOR PUBLISHERS</button>
+                <button class="btn-advantages advertiser-btn btn-hov">FOR ADVERTISERS</button>
             </div>
         </div>
         <div class="provide-stable-income-wrapper">
@@ -286,7 +287,7 @@
                         <li>Native ads match the design of the web page</li>
                     </ul>
                 </div>
-                <button class="btn-provide btn-color reg-modal-open">PUBLISHER REGISTRATION</button>
+                <button class="btn-provide btn-color reg-modal-open btn-hov">PUBLISHER REGISTRATION</button>
             </div>
 
             <div class="text-block-provide-wrapper advertiser-block d-none">
@@ -300,7 +301,7 @@
                         <li>advertiser 3</li>
                     </ul>
                 </div>
-                <button class="btn-provide btn-color reg-modal-open">ADVERTISER REGISTRATION</button>
+                <button class="btn-provide btn-color reg-modal-open btn-hov">ADVERTISER REGISTRATION</button>
             </div>
 
             <div class="img-block-provide-wrapper">
@@ -381,7 +382,7 @@
                 </div>
             </div>
             <div class="btn-started">
-                <button class="btn-monetization btn-color reg-modal-open">GET STARTED</button>
+                <button class="btn-monetization btn-color reg-modal-open btn-hov">GET STARTED</button>
             </div>
         </div>
     </div>
@@ -395,7 +396,7 @@
                     Discover easy campaign setup, effortless auto-optimization and rapid results
                 </div>
                 <div class="btn-time-start-wrapper">
-                    <button class="btn-time-start btn-color reg-modal-open">
+                    <button class="btn-time-start btn-color reg-modal-open btn-hov">
                         <div style="display:flex;flex-wrap:nowrap;">
                             <div><img src="img/Play.png" alt="" loading="lazy"></div>
                             <div style="margin-left:5px;white-space:nowrap;">START TODAY</div>
@@ -420,7 +421,7 @@
                         </div>
                     </div>
                     <div class="btn-questions-left-wrapper">
-                        <button class="btn-color reg-modal-open">SEND US A MESSAGE!</button>
+                        <button class="btn-color reg-modal-open btn-hov">SEND US A MESSAGE!</button>
                     </div>
                 </div>
             </div>
@@ -452,7 +453,7 @@
                                 </div>
                             </div>
                             <div class="btn-ready">
-                                <button class="btn-monetization btn-color reg-modal-open">GET STARTED</button>
+                                <button class="btn-monetization btn-color reg-modal-open btn-hov">GET STARTED</button>
                             </div>
 <!--                        </form>-->
                     </div>
@@ -472,7 +473,7 @@
                     We’ve sent you lettr to confirm your email address. Please check your inbox
                 </div>
                 <div class="success-btn">
-                    <button class="btn-color style-btn-success" id="okBtn">OK</button>
+                    <button class="btn-color style-btn-success btn-hov" id="okBtn">OK</button>
                 </div>
             </div>
         </div>
@@ -482,13 +483,13 @@
             <div class="registration-content-wrapper">
 
                 <img src="img/Vector.png" alt="" class="vector-success vector-cursor" id="vectorReg" loading="lazy">
-                <img src="img/Logo.png" alt="" width="140px" height="29px" loading="lazy">
+                <img src="img/Logo.svg" alt="" width="140px" height="29px" loading="lazy">
                 <div class="success-title">
                     Registration on Adenza
                 </div>
                 <div class="button-advantages-wrapper" style="margin-bottom: 20px;">
-                    <button class="btn-advantages active-btn publisher-btn">FOR PUBLISHERS</button>
-                    <button class="btn-advantages advertiser-btn">FOR ADVERTISERS</button>
+                    <button class="btn-advantages active-btn publisher-btn btn-hov">FOR PUBLISHERS</button>
+                    <button class="btn-advantages advertiser-btn btn-hov">FOR ADVERTISERS</button>
                 </div>
 
                 <form action="/send/send_1.php" method="post" id="submitForm" style="display: flex; flex-direction: column; align-items: center;">
@@ -519,12 +520,67 @@
                                 href="">terms and policy</a></span></label>
                     </div>
                     <div class="field">
-                        <button type="submit" class="btn-color style-btn-registration" id="regBtn">REGISTRATION</button>
+                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn">REGISTRATION</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+    <div class="wrapper-log-in-modal d-none dlg-modal dlg-modal-fade" id="modalLogIn">
+        <div class="log-in-wrapper">
+            <div class="log-in-content-wrapper">
+                <img src="img/Vector.png" alt="" class="vector-success vector-cursor" id="vectorLogIn" loading="lazy">
+                <img src="img/Logo.svg" alt="" width="140px" height="29px" loading="lazy">
+                <div class="success-title">
+                    Log in on Adenza
+                </div>
+                <form action="/send/send_1.php" method="post" id="submitForm" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="field" style="display: none">
+                        <input type="radio" class="publisher-radio" name="typeRegistration" value="publisher" checked>
+                        <input type="radio" class="advertiser-radio" name="typeRegistration" value="advertiser">
+                    </div>
+                    <div class="field">
+                        <img src="img/icon1.png" style="position:absolute;top:15px;left:30px;width:20px;">
+                        <input type="text" name="email" placeholder="E-mail" class="icon-mail" style="background-color: white;" loading="lazy">
+                    </div>
+                    <div class="field">
+                        <img src="img/icon2.png" style="position:absolute;top:15px;left:30px;width:20px;">
+                        <input type="password" name="password1" placeholder="Password" class="icon-pass" style="background-color: white;" loading="lazy">
+                    </div>
+                    <div class="field">
+                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn">Log in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="mobil-menu-block-wrapper d-none" id="mobilMenuContent">
         <div class="mobil-menu-block">
@@ -544,8 +600,8 @@
                 </a>
             </div>
             <div class="mobil-btn-block">
-                <button class="btn-indent">Log in</button>
-                <button class="btn-sign" style="background-color: #6F63FF; color: white; width: 125px; border: 0;">
+                <button class="btn-indent btn-hov">Log in</button>
+                <button class="btn-sign btn-hov" style="background-color: #6F63FF; color: white; width: 125px; border: 0;">
                     <div style="display:flex;flex-wrap:nowrap;justify-content: center;align-items: center;" id="mobilMenuSign">
                         <div><img src="img/Profile.png" alt="" loading="lazy"></div>
                         <div style="margin-left:5px;white-space:nowrap;">Sign Up</div>
@@ -652,6 +708,104 @@
 </script>
 
 <script>
+
+(function() {
+
+
+
+// коллекция всех элементов на странице, которые могут открывать всплывающие окна
+// их отличительной особенность является наличие атрибута '[data-modal]'
+const mOpen = document.querySelectorAll('[data-modal]');
+// если нет элементов управления всплывающими окнами, прекращаем работу скрипта
+if (mOpen.length == 0) return;
+ 
+	  // подложка под всплывающее окно
+const overlay = document.querySelector('.overlay'),
+	  // коллекция всплывающих окон
+	  modals = document.querySelectorAll('.dlg-modal'),
+	  // коллекция всех элементов на странице, которые могут
+	  // закрывать всплывающие окна
+	  // их отличительной особенность является наличие атрибута '[data-close]'
+	  mClose = document.querySelectorAll('[data-close]');
+// флаг всплывающего окна: false - окно закрыто, true - открыто
+let	mStatus = false;
+
+for (let el of mOpen) {
+	el.addEventListener('click', function(e) {
+		// используюя атрибут [data-modal], определяем ID всплывающего окна,
+		// которое требуется открыть
+		// по значению ID получаем ссылку на элемент с таким идентификатором
+		let modalId = el.dataset.modal,
+			modal = document.getElementById(modalId);
+		// вызываем функцию открытия всплывающего окна, аргументом
+		// является объект всплывающего окна
+		modalShow(modal);
+	});
+}
+
+var typeAnimate = 'fade';
+
+function modalShow(modal) {
+	// показываем подложку всплывающего окна
+	// overlay.classList.remove('fadeOut');
+	// overlay.classList.add('fadeIn');
+ 
+	// определяем тип анимации появления всплывающего окна
+	// убираем и добавляем классы, соответствующие типу анимации
+	if (typeAnimate === 'fade') {
+		modal.classList.remove('fadeOut');
+		modal.classList.add('fadeIn');
+	} else if (typeAnimate === 'slide') {
+		modal.classList.remove('slideOutUp');
+		modal.classList.add('slideInDown');
+	}
+	// выставляем флаг, обозначающий, что всплывающее окно открыто
+	mStatus = true;
+}
+
+for (let el of mClose) {
+	el.addEventListener('click', modalClose);
+}
+
+document.addEventListener('keydown', modalClose);
+
+if (mStatus && ( !event.keyCode || event.keyCode === 27 ) ) { 
+    modalClose(event);
+ }
+
+ function modalClose(event) {
+	if (mStatus && ( event.type != 'keydown' || event.keyCode === 27 ) ) {
+		// обходим по очереди каждый элемент коллекции modals (каждое всплывающее окно)
+		// и в зависимости от типа анимации, используемой на данной странице,
+		// удаляем класс анимации открытия окна и добавляем класс анимации закрытия
+		for (let modal of modals) {
+			if (typeAnimate == 'fade') {
+				modal.classList.remove('fadeIn');
+				modal.classList.add('fadeOut');
+			} else if (typeAnimate == 'slide') {
+				modal.classList.remove('slideInDown');
+				modal.classList.add('slideOutUp');
+			}
+		}
+ 
+		// закрываем overlay
+		overlay.classList.remove('fadeIn');
+		overlay.classList.add('fadeOut');
+		// сбрасываем флаг, устанавливая его значение в 'false'
+		// это значение указывает нам, что на странице нет открытых
+		// всплывающих окон
+		mStatus = false;
+	}
+}
+
+
+
+})();
+
+
+
+
+
 
 </script>
 </body>
