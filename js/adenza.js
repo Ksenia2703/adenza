@@ -156,9 +156,14 @@
         popupFade.classList.remove('d-none');
     });
 
-    vectorSuccess.addEventListener('click', () => {
-        popupFade.classList.add('d-none');
-        successModal.classList.add('d-none');
+    vectorSuccess.addEventListener('click', (e) => {
+        // popupFade.classList.add('d-none');
+        // successModal.classList.add('d-none');
+        modalClose(e);
+
+        // successModal.classList.add('fadeOut');
+        // successModal.classList.add('d-none');
+        // successModal.classList.remove('fadeIn');
     });
 
     closeBtn.addEventListener('click', (e) => {
@@ -207,16 +212,25 @@
 // });
 
     modalReg.addEventListener('click', (e) => {
-        if (e.target.className === 'wrapper-registration-modal') {
-            popupFade.classList.add('d-none');
-            modalReg.classList.add('d-none');
+        //if (e.target.className === 'wrapper-registration-modal') {
+        if (e.target.classList.contains('wrapper-registration-modal')) {
+            //popupFade.classList.add('d-none');
+            //popupFade.classList.add('fadeIn');
+            //popupFade.classList.add('fadeOut');
+            //modalReg.classList.add('d-none');
+            modalClose(e);
         }
     });
 
     successModal.addEventListener('click', (e) => {
-        if (e.target.className === 'wrapper-success-modal') {
-            popupFade.classList.add('d-none');
-            successModal.classList.add('d-none');
+        //if (e.target.className === 'wrapper-success-modal') {
+        if (e.target.classList.contains('wrapper-success-modal')) {
+            // popupFade.classList.add('d-none');
+            // successModal.classList.add('d-none');
+            modalClose(e);
+            // successModal.classList.add('fadeOut');
+            // successModal.classList.add('d-none');
+            // successModal.classList.remove('fadeIn');
         }
     });
 
@@ -229,8 +243,20 @@
                 console.log('el', submitForm.elements[el].value);
             });
 
+            // modalReg.classList.add('d-none');
+            // successModal.classList.remove('d-none');
+            //modalClose(e);
+            //modalShow(document.getElementById('successModal'));
+
             modalReg.classList.add('d-none');
+            modalReg.classList.add('fadeOut');
+            modalReg.classList.remove('fadeIn');
+
+            successModal.classList.remove('fadeOut');
             successModal.classList.remove('d-none');
+            successModal.classList.add('fadeIn');
+
+
             ['firstName', 'email', 'password1', 'password2'].forEach(function(el) {
                 submitForm.elements[el].value = '';
             });
@@ -242,9 +268,13 @@
         }
     });
 
-    okBtn.addEventListener('click', () => {
-        popupFade.classList.add('d-none');
+    okBtn.addEventListener('click', (e) => {
+        // popupFade.classList.add('d-none');
+        // successModal.classList.add('d-none');
+        successModal.classList.add('fadeOut');
         successModal.classList.add('d-none');
+        successModal.classList.remove('fadeIn');
+        //modalClose(e);
     });
 
     mobilMenu.addEventListener('click', () => {
@@ -262,7 +292,8 @@
     });
 
     function validateForm(form) {
-        return validateName(form) && validateEmail(form) && validatePassword(form) && validateCheckBoxAgree(form);
+        return true;
+        //return validateName(form) && validateEmail(form) && validatePassword(form) && validateCheckBoxAgree(form);
     }
 
     function validateName(form) {

@@ -462,7 +462,7 @@
             </div>
         </div>
     </div>
-    <div class="wrapper-success-modal d-none" id="successModal">
+    <div class="wrapper-success-modal d-none dlg-modal dlg-modal-fade" id="successModal">
         <div class="success-signed-wrapper">
             <div class="success-content-wrapper">
                 <img src="img/Vector.png" alt="" class="vector-success vector-cursor" id="vectorSuccess" loading="lazy">
@@ -524,7 +524,7 @@
                                 href="">terms and policy</a></span></label>
                     </div>
                     <div class="field">
-                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn" data-modal="successModal">
+                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn">
                             REGISTRATION
                         </button>
                     </div>
@@ -542,7 +542,7 @@
                 <div class="success-title">
                     Log in on Adenza
                 </div>
-                <form action="/send/send_1.php" method="post" id="submitForm"
+                <form action="/send/send_1.php" method="post" id="logInForm"
                       style="display: flex; flex-direction: column; align-items: center;">
                     <div class="field" style="display: none">
                         <input type="radio" class="publisher-radio" name="typeRegistration" value="publisher" checked>
@@ -559,7 +559,7 @@
                                style="background-color: white;" loading="lazy">
                     </div>
                     <div class="field">
-                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="regBtn">Log in
+                        <button type="submit" class="btn-color style-btn-registration btn-hov" id="logIn">Log in
                         </button>
                     </div>
                 </form>
