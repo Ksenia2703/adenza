@@ -187,11 +187,6 @@
         e.preventDefault();
         let isFieldCorrect = validateForm(submitForm);
         if (isFieldCorrect) {
-            console.log('submitForm', submitForm.elements);
-            ['firstName', 'email', 'password1', 'password2'].forEach(function(el) {
-                console.log('el', submitForm.elements[el].value);
-            });
-
             modalReg.classList.add('d-none');
             modalReg.classList.add('fadeOut');
             modalReg.classList.remove('fadeIn');
